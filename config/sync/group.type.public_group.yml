@@ -1,0 +1,13 @@
+uuid: fa8c6d4d-8205-4c03-a622-ee3677eb5540
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9RnptqADUkDGf5Gahtu0f6ErAjqvOLUit4TqbEiwg8k
+id: public_group
+label: 'Public group'
+description: 'This is a public group. Users may join without approval and all content added in this group will be visible to all community members and anonymous users.'
+creator_membership: true
+creator_wizard: false
+creator_roles:
+  - public_group-group_manager

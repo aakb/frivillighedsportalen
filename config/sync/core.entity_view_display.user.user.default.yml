@@ -1,0 +1,40 @@
+uuid: aa5c8e1a-4963-4581-85ca-a668214eee02
+langcode: da
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: m2KUyVd52WOjOKfANphGWnvnM6AzChT6cogYWkk_efo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  groups_type_flexible_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  groups_type_secret_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+hidden:
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  langcode: true
+  member_for: true
+  profile_main: true
+  profile_profile: true
+  profile_profiles: true
+  search_api_excerpt: true

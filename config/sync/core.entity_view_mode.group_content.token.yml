@@ -1,0 +1,10 @@
+uuid: fd2d9710-9c14-4acd-ba90-539c96d823c1
+langcode: da
+status: true
+dependencies:
+  module:
+    - group
+id: group_content.token
+label: Token
+targetEntityType: group_content
+cache: true

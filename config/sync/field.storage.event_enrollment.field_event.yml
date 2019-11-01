@@ -1,0 +1,22 @@
+uuid: 2c1cf734-ea84-4e3c-8658-a632569367b5
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - social_event
+_core:
+  default_config_hash: W7T1QQuUjEeZCgC_3Vfpeljkf7jc54xyeDDZYKGx8wI
+id: event_enrollment.field_event
+field_name: field_event
+entity_type: event_enrollment
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

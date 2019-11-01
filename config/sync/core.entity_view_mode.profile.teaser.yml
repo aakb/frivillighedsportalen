@@ -1,0 +1,12 @@
+uuid: 149b312a-1b5e-4e87-aa09-58d7ef42f36a
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: QwHKCTpE1suKE_XELJtpxPdCy6856mg2nrGY2GQI6tw
+id: profile.teaser
+label: Smagsprøve
+targetEntityType: profile
+cache: true

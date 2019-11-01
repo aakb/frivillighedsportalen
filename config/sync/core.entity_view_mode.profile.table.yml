@@ -1,0 +1,12 @@
+uuid: bc9e45ea-0f01-4023-9a91-006f54255d7d
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: YcYEl_VJgKpEnxk1iIM85ybbcVWyZHCzgsxjh_DAtuk
+id: profile.table
+label: Tabel
+targetEntityType: profile
+cache: true

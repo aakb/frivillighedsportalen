@@ -1,0 +1,21 @@
+uuid: cce72b67-ca18-4722-b3ee-9e3c9eca12ac
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_organization
+    - profile.type.profile
+_core:
+  default_config_hash: KIkcp7sAw2x_W8-DLJ9NGnZ9f_rrqyPQD9FKsNwoFD4
+id: profile.profile.field_profile_organization
+field_name: field_profile_organization
+entity_type: profile
+bundle: profile
+label: Organisation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

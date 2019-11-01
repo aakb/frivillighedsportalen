@@ -1,0 +1,19 @@
+uuid: 506bef74-c3f4-4075-be9d-febea755f7d8
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: YAfFfoWEwsZ4zhpgJul5q3wxYHutZ-dr0xHiDuvSfX8
+name: Emne
+type: topic
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

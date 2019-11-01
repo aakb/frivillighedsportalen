@@ -1,0 +1,36 @@
+uuid: b8217e0c-54ce-459f-a98e-88c21a079e97
+langcode: da
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.field_comment_body
+_core:
+  default_config_hash: 3tOK5PxzfojSpjhsO75OfLbAPAo87idRigAPn_ZW_wc
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  author:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_comment_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: 'Add a comment'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  subject: true

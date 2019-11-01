@@ -1,0 +1,10 @@
+uuid: f6871d05-5d5e-4b98-86c8-ed6e3a918af9
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aXZ2sOR-jVF6_oScPSJTjXCo333arzczomYQMnsJ8wU
+id: vote
+label: 'Normal stemme'
+value_type: points
+description: 'Standard-tag for stemmer på indhold. Hvis der afgives flere stemmer med forskellige tags på et stykke indhold bør du overveje også at afgive en resumé-stemme med dette tag.'

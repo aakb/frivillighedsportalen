@@ -1,0 +1,12 @@
+uuid: 4cee063e-bfe6-4e94-9523-1887e2cb5005
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: wmO6xCxLIrGhfwHdZnry41ZEiacB3O0VogCoyxIgWuI
+id: profile.search_index
+label: Søgeindeks
+targetEntityType: profile
+cache: true

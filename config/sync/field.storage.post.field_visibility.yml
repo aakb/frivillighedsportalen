@@ -1,0 +1,38 @@
+uuid: c63b43f9-4532-4990-ad94-8bd6f956a2c4
+langcode: da
+status: true
+dependencies:
+  module:
+    - dropdown
+    - social_post
+_core:
+  default_config_hash: 9IChKT1xRW3I7-oWdWMhAXoRYjpyJzG7PIVhkHaOlzU
+id: post.field_visibility
+field_name: field_visibility
+entity_type: post
+type: dropdown
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: Community
+      description: 'Visible only to members who are logged in'
+    -
+      value: '1'
+      label: Offentlig
+      description: 'Visible to all visitors of the site'
+    -
+      value: '2'
+      label: Community
+      description: 'Visible only to members who are logged in'
+    -
+      value: '3'
+      label: Gruppemedlemmer
+      description: 'Visible only to group members'
+module: dropdown
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

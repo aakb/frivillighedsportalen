@@ -1,0 +1,14 @@
+uuid: 113d9dc2-1ba6-44ba-9362-164fd3aba5d4
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.sitemanager
+  module:
+    - user
+id: user_add_role_action.sitemanager
+label: 'Add the Site manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: sitemanager

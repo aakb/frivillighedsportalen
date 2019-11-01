@@ -1,0 +1,10 @@
+uuid: d171c6fe-e071-4609-824b-5d74047e9e7f
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
+id: medium
+label: 'Standard mellem dato'
+locked: false
+pattern: 'D, m/d/Y - H:i'

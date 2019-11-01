@@ -1,0 +1,23 @@
+uuid: f898b098-8d62-4449-aeb4-99e5006ce5b0
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_description
+    - group.type.open_group
+  module:
+    - text
+_core:
+  default_config_hash: SbxMZ_Odyu_9UiGxKl9a-Etr9nnsFr9UONXBgt3dIiI
+id: group.open_group.field_group_description
+field_name: field_group_description
+entity_type: group
+bundle: open_group
+label: Beskrivelse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

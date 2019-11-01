@@ -1,0 +1,25 @@
+uuid: caa25d0b-1782-44c6-a8c8-3a5711d12a63
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - socialblue
+id: socialblue_local_actions
+theme: socialblue
+region: complementary_top
+weight: -18
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/admin/reports/*\r\n/group/*/membership\r\n/node/*/all-enrollments"
+    negate: true
+    context_mapping: {  }

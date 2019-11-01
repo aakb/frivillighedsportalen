@@ -1,0 +1,13 @@
+uuid: d874d88b-03b0-48dd-994f-47c402c29cd8
+langcode: da
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.follow_content.unflag
+label: 'Unfollow content'
+type: node
+plugin: 'flag_action:follow_content.unflag'
+configuration:
+  flag_id: follow_content
+  flag_action: unflag

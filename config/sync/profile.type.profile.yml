@@ -1,0 +1,16 @@
+uuid: 2d855bc9-316f-4694-a1d5-2acd0930eb43
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XknqMjXmay6Ivp8iiMAhawIM4idlyWLmoGLuNZtPyBA
+id: profile
+label: Profil
+display_label: null
+multiple: false
+registration: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+allow_revisions: false
+new_revision: false

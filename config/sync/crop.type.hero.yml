@@ -1,0 +1,14 @@
+uuid: 54e31c2a-e05b-4639-92f9-4226a8a9be15
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M7gu0hM5eQSjsQOYu7Dr2RFyItlWKYgKPQIfGbhVo1Q
+label: Stor
+id: hero
+description: 'Header image in the hero region'
+aspect_ratio: '1200:423'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

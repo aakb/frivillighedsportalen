@@ -1,0 +1,12 @@
+uuid: 68f4d688-4fb3-4994-94ed-3957ca8127dc
+langcode: da
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: IVSyQ6fjaMOZdEEqizw220YWT0vtcXW_LOgOP6a2Ies
+id: group.small_teaser
+label: 'Small teaser'
+targetEntityType: group
+cache: true

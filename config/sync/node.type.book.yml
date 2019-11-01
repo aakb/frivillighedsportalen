@@ -1,0 +1,24 @@
+uuid: 6310edac-b6c6-479a-a1de-45b4d44ebde8
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - book
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: Ydz_2hEOJFnVi-svZjm_iFXB7iyzwQBJ7CLF1oo6odo
+name: Bogside
+type: book
+description: '<em>Bøger</em> har en indbygget hierarkisk navigation. Kan bl.a. bruges til håndbøger og opslagsværk.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

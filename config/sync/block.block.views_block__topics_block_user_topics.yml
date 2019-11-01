@@ -1,0 +1,30 @@
+uuid: ed4a8b42-489a-4b2b-9f45-db910b0cb725
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+id: views_block__topics_block_user_topics
+theme: socialbase
+region: complementary_bottom
+weight: 3
+provider: null
+plugin: 'views_block:topics-block_user_topics'
+settings:
+  id: 'views_block:topics-block_user_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

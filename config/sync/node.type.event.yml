@@ -1,0 +1,19 @@
+uuid: 9d6e6aa8-cda9-4beb-b58d-224aafc9adc3
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: xAKaUWzbpluOMIPdY2QIzKEqVZffz4vaL3nWFtL884I
+name: Begivenhed
+type: event
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

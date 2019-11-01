@@ -1,0 +1,12 @@
+uuid: 0a467305-134e-4abe-9038-00e89b70aa61
+langcode: da
+status: false
+dependencies:
+  module:
+    - message
+_core:
+  default_config_hash: Pl6xok1fBCKaPlLC4iDJVaucp2W72csXt7M3Jwa95nU
+id: message.full
+label: 'Fuldt indhold'
+targetEntityType: message
+cache: true

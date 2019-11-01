@@ -1,0 +1,13 @@
+uuid: 480a5064-8100-4ee2-ad0d-b91d8d83a163
+langcode: da
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: MLin6S_PsJ7Oo480DxS46D46IM8tqFkkWOLyH7TGByI
+id: comment_unpublish_action
+label: 'Skjul kommentarer'
+type: comment
+plugin: comment_unpublish_action
+configuration: {  }

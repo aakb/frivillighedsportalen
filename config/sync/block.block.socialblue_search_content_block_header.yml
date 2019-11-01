@@ -1,0 +1,20 @@
+uuid: feb5db8c-4745-48f4-9ff4-6e04bb85c141
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_search
+  theme:
+    - socialblue
+id: socialblue_search_content_block_header
+theme: socialblue
+region: content_top
+weight: -9
+provider: null
+plugin: search_content_block
+settings:
+  id: search_content_block
+  label: 'Search content block'
+  provider: social_search
+  label_display: '0'
+visibility: {  }

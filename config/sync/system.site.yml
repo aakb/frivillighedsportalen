@@ -1,0 +1,14 @@
+uuid: 9804fd0c-fbb9-43ab-9eeb-3ff527e9a628
+name: Frivillighedsportalen
+mail: info@itkdev.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /stream
+admin_compact_mode: false
+weight_select_max: 100
+langcode: da
+default_langcode: da
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

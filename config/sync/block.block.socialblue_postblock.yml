@@ -1,0 +1,26 @@
+uuid: a1e9e4c7-a47a-4873-966f-9b68126de38e
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_post
+    - system
+  theme:
+    - socialblue
+id: socialblue_postblock
+theme: socialblue
+region: hidden
+weight: -7
+provider: null
+plugin: post_block
+settings:
+  id: post_block
+  label: 'Post block'
+  provider: social_post
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /stream
+    negate: false
+    context_mapping: {  }

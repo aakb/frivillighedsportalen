@@ -1,0 +1,29 @@
+uuid: 59835412-06f2-4902-89e0-723f61854358
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: B64FygOPdWuKKxAmCndkKdBwFAI_8J0GRs5XFZFravk
+name: 'Simpel tekst'
+format: simple_text
+weight: 5
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

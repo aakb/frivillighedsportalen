@@ -1,0 +1,10 @@
+uuid: 24673a95-64f0-4918-a537-d1db344b9f31
+langcode: da
+status: true
+dependencies:
+  module:
+    - activity_creator
+id: activity.token
+label: Token
+targetEntityType: activity
+cache: true
