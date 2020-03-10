@@ -1,0 +1,17 @@
+uuid: 2995e1b0-53c8-4a62-bdc7-9d81c499b4b8
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.flexible_group
+  enforced:
+    config:
+      - user.role.frivillig
+id: flexible_group-66c3c8cc7
+label: Frivillig
+weight: 5
+internal: true
+audience: outsider
+group_type: flexible_group
+permissions_ui: false
+permissions: {  }

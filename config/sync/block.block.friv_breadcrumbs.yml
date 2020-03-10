@@ -1,0 +1,29 @@
+uuid: 37362ae1-6bd5-4661-8d62-5b676335925e
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - friv
+id: friv_breadcrumbs
+theme: friv
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

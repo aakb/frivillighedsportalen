@@ -1,6 +1,6 @@
 uuid: 114fbb93-95f4-464b-b041-488585bd6085
 langcode: da
-status: true
+status: false
 dependencies:
   module:
     - node
@@ -10,7 +10,7 @@ dependencies:
 id: shariffsharebuttons
 theme: socialblue
 region: complementary_bottom
-weight: 0
+weight: -16
 provider: null
 plugin: shariff_block
 settings:

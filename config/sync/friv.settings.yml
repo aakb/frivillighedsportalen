@@ -1,0 +1,19 @@
+favicon:
+  mimetype: image/png
+  path: 'public://bobler2.png'
+  url: 'http://frivillighedsportalen.docker.localhost/sites/default/files/bobler2.png'
+  use_default: 0
+features:
+  comment_user_picture: true
+  comment_user_verification: 0
+  favicon: 1
+  node_user_picture: true
+logo:
+  path: 'public://bobler1.png'
+  url: ''
+  use_default: 0
+schemas:
+  bootstrap: 8000
+  socialbase: 8000
+  socialblue: 8000
+  friv: 8000

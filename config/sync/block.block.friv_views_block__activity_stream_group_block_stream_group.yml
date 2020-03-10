@@ -1,0 +1,30 @@
+uuid: 3495113b-6394-411b-86a1-ffa4edd2b8b0
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream_group
+  module:
+    - system
+    - views
+  theme:
+    - friv
+id: friv_views_block__activity_stream_group_block_stream_group
+theme: friv
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:activity_stream_group-block_stream_group'
+settings:
+  id: 'views_block:activity_stream_group-block_stream_group'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/stream'
+    negate: false
+    context_mapping: {  }

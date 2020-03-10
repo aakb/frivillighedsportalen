@@ -2,16 +2,24 @@ uuid: 1eb88fd3-faf3-4300-9d55-b5766c1d1600
 langcode: da
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
     - field_group
+    - text
     - user
 third_party_settings:
   field_group:
     group_information:
       children:
         - account
+        - field_frivillig
       parent_name: ''
-      weight: 0
+      weight: 1
       label: 'Account information'
       format_type: fieldset
       format_settings:
@@ -19,11 +27,12 @@ third_party_settings:
         required_fields: true
         id: ''
         classes: ''
+      region: content
     group_locale_settings:
       children:
         - timezone
       parent_name: ''
-      weight: 1
+      weight: 5
       format_type: fieldset
       format_settings:
         id: ''
@@ -31,6 +40,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Locale settings'
+      region: content
 _core:
   default_config_hash: pRQ6ymdA2LS1Ssy6jQIpcFyAkOgrFCOfnW5S1j_knPE
 id: user.user.default
@@ -40,6 +50,50 @@ mode: default
 content:
   account:
     weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_consent:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_firstname:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_frivillig:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_lastname:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  private_messages:
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: qCLMP-0MXlEosgCTtSObGZfI5-merhzowkllR1Jgyq8
 id: public_group-group_node-topic
-label: emne
+label: dokument
 description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'
 group_type: public_group
 content_plugin: 'group_node:topic'

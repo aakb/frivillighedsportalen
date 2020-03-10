@@ -1,0 +1,31 @@
+uuid: 417a05cf-dce8-49fd-9d18-fbb5ffdb2f2d
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.group_members
+  module:
+    - system
+    - views
+  theme:
+    - friv
+id: friv_views_block__group_members_block_newest_members
+theme: friv
+region: complementary_bottom
+weight: -18
+provider: null
+plugin: 'views_block:group_members-block_newest_members'
+settings:
+  id: 'views_block:group_members-block_newest_members'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/group/*/stream\r\n/group/*/about\r\n/dokumenter"
+    negate: false
+    context_mapping: {  }

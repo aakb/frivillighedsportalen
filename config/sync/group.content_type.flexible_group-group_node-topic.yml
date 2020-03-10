@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: NdqEQFRAz_vLVQbQZ-bats8yKYlmokAmmoJuhywMeNg
 id: flexible_group-group_node-topic
-label: emne
+label: dokument
 description: 'Adds <em class="placeholder">Topic</em> content to groups using private content settings.'
 group_type: flexible_group
 content_plugin: 'group_node:topic'

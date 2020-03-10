@@ -10,7 +10,7 @@ dependencies:
 id: booknavigation_2
 theme: socialblue
 region: complementary_top
-weight: 0
+weight: -16
 provider: null
 plugin: book_navigation
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: socialblue_views_block__group_members_block_newest_members
 theme: socialblue
 region: complementary_bottom
-weight: 5
+weight: -18
 provider: null
 plugin: 'views_block:group_members-block_newest_members'
 settings:
@@ -22,9 +22,10 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/stream\r\n/group/*/about"
+    pages: "/group/*/stream\r\n/group/*/about\r\n/dokumenter"
     negate: false
     context_mapping: {  }

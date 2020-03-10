@@ -5,8 +5,8 @@ dependencies: {  }
 _core:
   default_config_hash: xroGCpvSEB-Z8oEpr64RsyjOZ2T4BnXvgTpvgo_O5DY
 id: closed_group
-label: 'Closed group'
-description: 'This is a closed group. Users can only join by invitation and the content in the group is hidden from non members.'
+label: 'Lukket gruppe'
+description: 'Dette er en lukket gruppe. Brugere kan kun tilføjes med invitation og alt indhold oprettet i denne gruppe er kun synligt for alle gruppemedlemmer.'
 creator_membership: true
 creator_wizard: false
 creator_roles:

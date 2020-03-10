@@ -21,7 +21,7 @@ _core:
   default_config_hash: fUIQO9Lm_XhSfzcT-ae10YmFY4YdMea1rMIFMfUjI0M
 template: create_topic_community
 label: 'Opret emne'
-description: 'A user created a topic in the community'
+description: 'En bruger har oprettet et fælles dokument'
 text:
   -
     format: full_html

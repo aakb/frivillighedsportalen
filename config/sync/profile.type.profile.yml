@@ -6,11 +6,11 @@ _core:
   default_config_hash: XknqMjXmay6Ivp8iiMAhawIM4idlyWLmoGLuNZtPyBA
 id: profile
 label: Profil
-display_label: null
+display_label: ''
 multiple: false
-registration: false
+registration: true
 roles:
-  authenticated: '0'
-  administrator: '0'
+  frivillig: frivillig
+  frivillig_manager: frivillig_manager
 allow_revisions: false
 new_revision: false

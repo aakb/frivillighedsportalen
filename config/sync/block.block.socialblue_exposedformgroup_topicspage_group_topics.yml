@@ -12,7 +12,7 @@ dependencies:
 id: socialblue_exposedformgroup_topicspage_group_topics
 theme: socialblue
 region: complementary_top
-weight: -9
+weight: -20
 provider: null
 plugin: 'views_exposed_filter_block:group_topics-page_group_topics'
 settings:

@@ -101,7 +101,6 @@ field_settings:
         - node
 datasource_settings:
   'entity:node':
-    plugin_id: 'entity:node'
     bundles:
       default: true
       selected: {  }
@@ -227,6 +226,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: false
+  index_directly: true
   cron_limit: 50
 server: social_database

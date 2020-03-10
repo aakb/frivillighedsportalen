@@ -1,0 +1,25 @@
+uuid: d9537039-32b6-481b-a3fa-6c8304f9a90a
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - friv
+id: friv_content
+theme: friv
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /faq
+    negate: false
+    context_mapping: {  }

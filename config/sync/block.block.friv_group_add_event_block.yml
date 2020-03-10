@@ -1,0 +1,26 @@
+uuid: d923ef96-1167-4e0a-b074-1c90a6874830
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_group
+    - system
+  theme:
+    - friv
+id: friv_group_add_event_block
+theme: friv
+region: complementary_top
+weight: -25
+provider: null
+plugin: group_add_event_block
+settings:
+  id: group_add_event_block
+  label: 'Group add event block'
+  provider: social_group
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/events'
+    negate: false
+    context_mapping: {  }

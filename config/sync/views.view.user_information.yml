@@ -42,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Udfør
+          submit_button: Anvend
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: some
         options:
@@ -176,7 +176,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: Alt
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -224,7 +224,7 @@ display:
   user_information:
     display_plugin: page
     id: user_information
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

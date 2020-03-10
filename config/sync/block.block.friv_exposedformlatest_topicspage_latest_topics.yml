@@ -1,0 +1,29 @@
+uuid: 27e00bc9-2fe6-40cf-ada9-7d232ba89997
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - friv
+id: friv_exposedformlatest_topicspage_latest_topics
+theme: friv
+region: complementary_top
+weight: -14
+provider: null
+plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
+settings:
+  id: 'views_exposed_filter_block:latest_topics-page_latest_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /all-topics
+    negate: false
+    context_mapping: {  }

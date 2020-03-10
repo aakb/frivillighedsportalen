@@ -1,0 +1,39 @@
+uuid: bab708a3-e5c8-411f-a122-7677a28b4727
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - friv
+id: friv_views_block__upcoming_events_block_my_upcoming_events
+theme: friv
+region: complementary_bottom
+weight: -26
+provider: null
+plugin: 'views_block:upcoming_events-block_my_upcoming_events'
+settings:
+  id: 'views_block:upcoming_events-block_my_upcoming_events'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/stream\r\n/forside"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -10,7 +10,7 @@ dependencies:
 id: socialblue_topic_add_block
 theme: socialblue
 region: complementary_top
-weight: -98
+weight: -28
 provider: null
 plugin: topic_add_block
 settings:
@@ -21,6 +21,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/topics'
+    pages: "/user/*/topics\r\n"
     negate: false
     context_mapping: {  }

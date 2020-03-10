@@ -6,13 +6,14 @@ dependencies:
     - views.view.upcoming_events
   module:
     - system
+    - user
     - views
   theme:
     - socialblue
 id: socialblue_views_block__upcoming_events_block_community_events
 theme: socialblue
 region: complementary_bottom
-weight: 2
+weight: -25
 provider: null
 plugin: 'views_block:upcoming_events-block_community_events'
 settings:
@@ -25,6 +26,17 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore"
+    pages: "/stream\r\n/explore\r\n/forside\r\n/faq"
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

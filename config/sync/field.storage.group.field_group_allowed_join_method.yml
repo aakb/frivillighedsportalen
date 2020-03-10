@@ -15,7 +15,7 @@ settings:
   allowed_values:
     -
       value: direct
-      label: 'Join directly'
+      label: 'Tilmeld direkte'
     -
       value: added
       label: 'Be added'

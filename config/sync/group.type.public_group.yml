@@ -5,8 +5,8 @@ dependencies: {  }
 _core:
   default_config_hash: 9RnptqADUkDGf5Gahtu0f6ErAjqvOLUit4TqbEiwg8k
 id: public_group
-label: 'Public group'
-description: 'This is a public group. Users may join without approval and all content added in this group will be visible to all community members and anonymous users.'
+label: 'Offentlig gruppe'
+description: 'Dette er en offentlig gruppe. Brugere må tilføjes uden godkendelse og alt indhold oprettet i denne gruppe er synligt for alle gruppemedlemmer og anonyme brugere.'
 creator_membership: true
 creator_wizard: false
 creator_roles:

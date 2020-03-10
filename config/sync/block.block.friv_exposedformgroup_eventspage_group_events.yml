@@ -1,0 +1,29 @@
+uuid: 50375aa2-214b-4ff3-8b6e-1291c8812e09
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.group_events
+  module:
+    - system
+    - views
+  theme:
+    - friv
+id: friv_exposedformgroup_eventspage_group_events
+theme: friv
+region: complementary_top
+weight: -21
+provider: null
+plugin: 'views_exposed_filter_block:group_events-page_group_events'
+settings:
+  id: 'views_exposed_filter_block:group_events-page_group_events'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/events'
+    negate: false
+    context_mapping: {  }

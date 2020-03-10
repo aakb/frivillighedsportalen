@@ -48,13 +48,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Udfør
+          submit_button: Anvend
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -63,18 +63,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Forrige'
-            next: 'Næste ›'
-            first: '« Første'
-            last: 'Sidste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           quantity: 9
       style:
         type: table
@@ -332,7 +332,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Joined date'
+          label: 'Tilmeldt siden'
           exclude: false
           alter:
             alter_text: false
@@ -564,7 +564,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: Alt
           title_enable: true
           title: 'Members of {{ arguments.gid }}'
           default_argument_type: group_id_from_url
@@ -615,7 +615,7 @@ display:
   page_group_manage_members:
     display_plugin: page
     id: page_group_manage_members
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

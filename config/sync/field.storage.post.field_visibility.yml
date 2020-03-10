@@ -15,15 +15,15 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: Community
+      label: Fælles
       description: 'Visible only to members who are logged in'
     -
       value: '1'
       label: Offentlig
-      description: 'Visible to all visitors of the site'
+      description: 'Synlig for alle besøgene på siden'
     -
       value: '2'
-      label: Community
+      label: Fælles
       description: 'Visible only to members who are logged in'
     -
       value: '3'

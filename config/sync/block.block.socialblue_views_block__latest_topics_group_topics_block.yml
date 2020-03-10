@@ -12,7 +12,7 @@ dependencies:
 id: socialblue_views_block__latest_topics_group_topics_block
 theme: socialblue
 region: complementary_bottom
-weight: 3
+weight: -23
 provider: null
 plugin: 'views_block:latest_topics-group_topics_block'
 settings:

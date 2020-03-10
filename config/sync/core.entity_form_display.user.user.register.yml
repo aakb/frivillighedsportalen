@@ -4,8 +4,35 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
+    - field_group
+    - profile
     - user
+third_party_settings:
+  field_group:
+    group_extrafields:
+      children:
+        - field_consent
+        - field_phone
+        - field_lastname
+        - field_firstname
+        - field_frivillig
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        label: 'Flere informationer'
+        description: ''
+        required_fields: true
+        id: create-user-form-more-information
+        classes: ''
+      label: 'Flere informationer'
+      region: hidden
 _core:
   default_config_hash: 5XmB0TdrQv500vSDploRnCfyrbBrMfB975V9S17CRaQ
 id: user.user.register
@@ -15,13 +42,56 @@ mode: register
 content:
   account:
     weight: 0
+    region: content
     settings: {  }
+    third_party_settings: {  }
+  field_consent:
+    type: boolean_checkbox
+    weight: -10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_firstname:
+    type: string_textfield
+    weight: -40
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_lastname:
+    type: string_textfield
+    weight: -30
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: -20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  private_messages:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  profile_profiles:
+    type: profile_form
+    weight: 90
+    settings:
+      form_mode: registration
     third_party_settings: {  }
     region: content
 hidden:
   contact: true
+  field_frivillig: true
   groups: true
   langcode: true
   language: true
-  profile_profiles: true
   timezone: true

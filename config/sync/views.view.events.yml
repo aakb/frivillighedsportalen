@@ -48,11 +48,11 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: ascending
-          sort_desc_label: descending
+          sort_asc_label: stigende
+          sort_desc_label: faldende
       pager:
         type: full
         options:
@@ -62,17 +62,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Næste ›'
-            first: '« Første'
-            last: 'Sidste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           quantity: 9
       style:
         type: default
@@ -260,7 +260,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: 'Events for this user'
+      title: 'Begivenheder for denne bruger'
       header: {  }
       footer: {  }
       empty:
@@ -273,7 +273,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No events found for this user'
+          content: 'Ingen begivenheder fundet for denne bruger'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -554,7 +554,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Emner
+        title: Dokumenter
         description: ''
         weight: 0
       exposed_block: true

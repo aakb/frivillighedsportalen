@@ -1,0 +1,11 @@
+uuid: 274a703a-8e60-4add-900d-255e3fa9607c
+langcode: da
+status: true
+dependencies:
+  config:
+    - media.type.dokument
+id: media.dokument
+target_entity_type_id: media
+target_bundle: dokument
+default_langcode: site_default
+language_alterable: false

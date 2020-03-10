@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
 id: newest_groups
-label: 'Newest groups'
+label: 'Nyeste grupper'
 module: views
 description: ''
 tag: ''
@@ -45,11 +45,11 @@ display:
         options:
           submit_button: Filter
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -60,16 +60,16 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Første'
-            last: 'Sidste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           quantity: 9
       style:
         type: default
@@ -182,7 +182,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Newest groups'
+      title: 'Nyeste grupper'
       defaults:
         title: false
         pager: false

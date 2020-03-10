@@ -1,0 +1,21 @@
+uuid: 20256665-c8c2-4afb-9343-d1d69d88d272
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_frivillig
+  module:
+    - text
+    - user
+id: user.user.field_frivillig
+field_name: field_frivillig
+entity_type: user
+bundle: user
+label: Frivillig
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

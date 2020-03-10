@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: u8h2r1BrUH6OfI_yTrgSWFmrdtrXHD2Dp82nuImJ8XY
 id: closed_group-group_membership
-label: 'Closed group: Group membership'
+label: 'Lukket gruppe: gruppe medlemsskab'
 description: 'Adds users to groups as members.'
 group_type: closed_group
 content_plugin: group_membership

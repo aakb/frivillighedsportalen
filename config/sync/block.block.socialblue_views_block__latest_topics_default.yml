@@ -12,7 +12,7 @@ dependencies:
 id: socialblue_views_block__latest_topics_default
 theme: socialblue
 region: complementary_bottom
-weight: 3
+weight: -22
 provider: null
 plugin: 'views_block:latest_topics-block_latest_topics'
 settings:
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore"
+    pages: "/stream\r\n/explore\r\n/forside"
     negate: false
     context_mapping: {  }

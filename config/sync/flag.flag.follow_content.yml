@@ -7,15 +7,15 @@ dependencies:
 _core:
   default_config_hash: u7QcIilN6W6ooHahb_7xRJH8vSy0RDp_LDpyqBUk1Dk
 id: follow_content
-label: 'Follow content'
+label: Følg
 bundles: {  }
 entity_type: node
 global: false
 weight: 0
-flag_short: 'Follow content'
+flag_short: Følg
 flag_long: ''
 flag_message: ''
-unflag_short: 'Unfollow content'
+unflag_short: 'Følg ikke'
 unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''

@@ -1,0 +1,14 @@
+uuid: 44c50fcb-4d89-4633-810a-b4f67371e68b
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.frivillig
+  module:
+    - user
+id: user_remove_role_action.frivillig
+label: 'Remove the Frivillig role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: frivillig

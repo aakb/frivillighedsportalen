@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: ANRuEQZLCnuSVkBzT8h_wvvOREIVnH_5-o2zAjoY6Gs
 id: open_group-group_membership
-label: 'Open group: Group membership'
+label: 'Åben gruppe: gruppe medlemskab'
 description: 'Adds users to groups as members.'
 group_type: open_group
 content_plugin: group_membership

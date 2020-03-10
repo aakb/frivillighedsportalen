@@ -10,7 +10,7 @@ dependencies:
 id: socialblue_search_block_hero
 theme: socialblue
 region: hero
-weight: null
+weight: -29
 provider: null
 plugin: search_hero_block
 settings:

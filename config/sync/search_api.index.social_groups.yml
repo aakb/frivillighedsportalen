@@ -73,7 +73,6 @@ field_settings:
         - group
 datasource_settings:
   'entity:group':
-    plugin_id: 'entity:group'
     bundles:
       default: true
       selected: {  }
@@ -228,6 +227,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: false
+  index_directly: true
   cron_limit: 50
 server: social_database

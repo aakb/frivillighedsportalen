@@ -1,0 +1,17 @@
+uuid: 6ae7011e-a60f-4494-98d0-01b7d48c549f
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+  enforced:
+    config:
+      - user.role.frivillig_manager
+id: public_group-aa2f78f8d
+label: 'Frivillig manager'
+weight: 6
+internal: true
+audience: outsider
+group_type: public_group
+permissions_ui: false
+permissions: {  }

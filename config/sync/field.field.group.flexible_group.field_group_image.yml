@@ -13,8 +13,8 @@ id: group.flexible_group.field_group_image
 field_name: field_group_image
 entity_type: group
 bundle: flexible_group
-label: 'Group Image'
-description: 'Crop your image to select which part of your image to show on display.'
+label: 'Gruppe billede'
+description: 'Beskær billedet for at vælge hvilke dele der skal vises.'
 required: false
 translatable: false
 default_value: {  }

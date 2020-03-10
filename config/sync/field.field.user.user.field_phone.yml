@@ -1,0 +1,20 @@
+uuid: b352be60-106c-4861-bd1a-0324263d9b13
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_phone
+  module:
+    - user
+id: user.user.field_phone
+field_name: field_phone
+entity_type: user
+bundle: user
+label: Telefonnummer
+description: 'Indtast telefonnummer'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

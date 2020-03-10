@@ -10,7 +10,7 @@ dependencies:
 id: socialblue_group_add_topic_block
 theme: socialblue
 region: complementary_top
-weight: -95
+weight: -24
 provider: null
 plugin: group_add_topic_block
 settings:
@@ -21,6 +21,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/group/*/topics'
+    pages: "/group/*/topics\r\n/dokumenter"
     negate: false
     context_mapping: {  }

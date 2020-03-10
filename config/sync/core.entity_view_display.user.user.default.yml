@@ -2,7 +2,14 @@ uuid: aa5c8e1a-4963-4581-85ca-a668214eee02
 langcode: da
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
+    - text
     - user
 _core:
   default_config_hash: m2KUyVd52WOjOKfANphGWnvnM6AzChT6cogYWkk_efo
@@ -11,6 +18,47 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_consent:
+    weight: -3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_firstname:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_frivillig:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_lastname:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   groups_type_flexible_group:
     label: above
     weight: -5
@@ -33,7 +81,9 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  linked_username: true
   member_for: true
+  private_message_link: true
   profile_main: true
   profile_profile: true
   profile_profiles: true

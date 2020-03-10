@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: YcYEl_VJgKpEnxk1iIM85ybbcVWyZHCzgsxjh_DAtuk
 id: profile.table
-label: Tabel
+label: Table
 targetEntityType: profile
 cache: true

@@ -13,7 +13,7 @@ dependencies:
 id: socialblue_exposedformtopicspage_profile
 theme: socialblue
 region: complementary_top
-weight: 3
+weight: -12
 provider: null
 plugin: 'views_exposed_filter_block:topics-page_profile'
 settings:

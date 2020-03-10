@@ -1,0 +1,30 @@
+uuid: 368e6b61-b9f9-48d3-a235-01de5195a682
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - views
+  theme:
+    - friv
+id: friv_views_block__topics_block_user_topics
+theme: friv
+region: complementary_bottom
+weight: -21
+provider: null
+plugin: 'views_block:topics-block_user_topics'
+settings:
+  id: 'views_block:topics-block_user_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

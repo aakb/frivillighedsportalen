@@ -12,6 +12,7 @@ dependencies:
     - field.storage.profile.field_profile_first_name
     - field.storage.profile.field_profile_interests
     - field.storage.profile.field_profile_last_name
+    - field.storage.profile.field_profile_nick_name
     - field.storage.profile.field_profile_profile_tag
     - search_api.server.social_database
     - core.entity_view_mode.profile.search_index
@@ -64,6 +65,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.profile.field_profile_last_name
+  field_profile_nick_name:
+    label: Nickname
+    datasource_id: 'entity:profile'
+    property_path: field_profile_nick_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_nick_name
   field_profile_profile_tag:
     label: 'Profile tag'
     datasource_id: 'entity:profile'
@@ -114,7 +123,6 @@ field_settings:
         - user
 datasource_settings:
   'entity:profile':
-    plugin_id: 'entity:profile'
     bundles:
       default: true
       selected: {  }
@@ -155,6 +163,7 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
+      - field_profile_nick_name
       - name
       - rendered_item
     weights:
@@ -219,6 +228,7 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
+      - field_profile_nick_name
       - name
       - rendered_item
     spaces: ''
@@ -233,6 +243,7 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
+      - field_profile_nick_name
       - name
       - rendered_item
     weights:
@@ -242,6 +253,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: false
+  index_directly: true
   cron_limit: 50
 server: social_database

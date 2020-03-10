@@ -18,7 +18,7 @@ settings:
       label: 'Not enrolled'
     -
       value: '1'
-      label: Enrolled
+      label: Tilmeldt
   allowed_values_function: ''
 module: options
 locked: false

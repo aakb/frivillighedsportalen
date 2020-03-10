@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 _core:
   default_config_hash: YAfFfoWEwsZ4zhpgJul5q3wxYHutZ-dr0xHiDuvSfX8
-name: Emne
+name: Dokument
 type: topic
 description: ''
 help: ''
