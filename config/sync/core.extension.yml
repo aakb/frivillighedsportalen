@@ -126,6 +126,7 @@ module:
   social_group: 2
   social_group_secret: 4
   social_group_flexible_group: 5
+  content_translation: 10
   views: 10
   improved_theme_settings: 50
   social: 1000
