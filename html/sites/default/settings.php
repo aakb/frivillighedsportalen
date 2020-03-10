@@ -28,6 +28,7 @@ $settings['entity_update_backup'] = TRUE;
 
 // Configuration sync path.
 $config_directories['sync'] = '../config/sync';
+$settings['custom_translations_directory'] = '../translations';
 
 // Local settings. These come last so that they can override anything.
 if (file_exists(__DIR__ . '/settings.local.php')) {
