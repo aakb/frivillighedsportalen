@@ -1,0 +1,9 @@
+<?php
+
+function friv_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  
+  if ($hook == 'profile' ) {
+    $request = \Drupal::routeMatch()->getRouteObject()->getDefault('view_id');
+    $suggestions[] = 'profile__profile__teaser__group_members-' . str_replace('-', '_', $request);
+  }
+}
