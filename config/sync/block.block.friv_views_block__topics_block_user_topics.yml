@@ -12,7 +12,7 @@ dependencies:
 id: friv_views_block__topics_block_user_topics
 theme: friv
 region: complementary_bottom
-weight: -21
+weight: -23
 provider: null
 plugin: 'views_block:topics-block_user_topics'
 settings:

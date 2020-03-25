@@ -12,7 +12,7 @@ dependencies:
 id: friv_views_block__events_block_events_on_profile
 theme: friv
 region: complementary_bottom
-weight: -27
+weight: -29
 provider: null
 plugin: 'views_block:events-block_events_on_profile'
 settings:

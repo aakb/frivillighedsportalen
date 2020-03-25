@@ -12,7 +12,7 @@ dependencies:
 id: friv_views_block__latest_topics_default
 theme: friv
 region: complementary_bottom
-weight: -22
+weight: -24
 provider: null
 plugin: 'views_block:latest_topics-block_latest_topics'
 settings:

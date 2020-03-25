@@ -1,0 +1,54 @@
+uuid: 946aa693-5387-4dce-9250-316c2180abce
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.martintest
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
+  module:
+    - user
+_core:
+  default_config_hash: m2KUyVd52WOjOKfANphGWnvnM6AzChT6cogYWkk_efo
+id: user.user.martintest
+targetEntityType: user
+bundle: user
+mode: martintest
+content:
+  field_firstname:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_consent: true
+  field_frivillig: true
+  field_phone: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_flexible_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  groups_type_secret_group: true
+  langcode: true
+  linked_username: true
+  member_for: true
+  private_message_link: true
+  profile_main: true
+  profile_profile: true
+  profile_profiles: true
+  search_api_excerpt: true

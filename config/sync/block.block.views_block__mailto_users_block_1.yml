@@ -1,0 +1,24 @@
+uuid: 2b9b16f0-769f-4364-ac2f-a5d64f80c5ee
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.mailto_users
+  module:
+    - views
+  theme:
+    - friv
+id: views_block__mailto_users_block_1
+theme: friv
+region: complementary_bottom
+weight: 0
+provider: null
+plugin: 'views_block:mailto_users-block_1'
+settings:
+  id: 'views_block:mailto_users-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

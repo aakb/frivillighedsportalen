@@ -1,0 +1,29 @@
+uuid: 2ebc187a-753f-4cf0-8637-dd17c3c3ed12
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group_content.martintest
+    - field.field.group_content.closed_group-group_membership.group_roles
+    - group.content_type.closed_group-group_membership
+_core:
+  default_config_hash: JvPWmhPxCZqE_JAaXc1jXANcZtzQOeudVFjv9GFePLk
+id: group_content.closed_group-group_membership.martintest
+targetEntityType: group_content
+bundle: closed_group-group_membership
+mode: martintest
+content:
+  entity_id:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: martintest
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  group_roles: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

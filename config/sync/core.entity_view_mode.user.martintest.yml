@@ -1,0 +1,10 @@
+uuid: 32939b9e-ef58-4007-8fdd-f1978854fdd1
+langcode: da
+status: true
+dependencies:
+  module:
+    - user
+id: user.martintest
+label: martintest
+targetEntityType: user
+cache: true

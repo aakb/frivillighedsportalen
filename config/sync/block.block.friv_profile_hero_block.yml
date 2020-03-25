@@ -10,7 +10,7 @@ dependencies:
 id: friv_profile_hero_block
 theme: friv
 region: hero
-weight: -15
+weight: -25
 provider: null
 plugin: profile_hero_block
 settings:

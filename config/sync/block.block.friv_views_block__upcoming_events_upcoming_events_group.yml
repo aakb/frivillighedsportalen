@@ -13,7 +13,7 @@ dependencies:
 id: friv_views_block__upcoming_events_upcoming_events_group
 theme: friv
 region: complementary_bottom
-weight: -24
+weight: -26
 provider: null
 plugin: 'views_block:upcoming_events-upcoming_events_group'
 settings:

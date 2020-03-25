@@ -12,7 +12,7 @@ dependencies:
 id: friv_views_block__groups_block_user_groups
 theme: friv
 region: complementary_bottom
-weight: -19
+weight: -21
 provider: null
 plugin: 'views_block:groups-block_user_groups'
 settings:

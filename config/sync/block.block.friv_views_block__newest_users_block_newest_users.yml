@@ -12,7 +12,7 @@ dependencies:
 id: friv_views_block__newest_users_block_newest_users
 theme: friv
 region: complementary_bottom
-weight: -17
+weight: -19
 provider: null
 plugin: 'views_block:newest_users-block_newest_users'
 settings:

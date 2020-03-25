@@ -10,7 +10,7 @@ dependencies:
 id: friv_pagetitleblock_2
 theme: friv
 region: hero
-weight: -20
+weight: -28
 provider: null
 plugin: social_page_title_block
 settings:
