@@ -171,7 +171,7 @@
             "version": "v3.5.17",
             "source": {
                 "type": "git",
-                "url": "git@github.com:mbostock-bower/d3-bower.git",
+                "url": "https://github.com/mbostock-bower/d3-bower.git",
                 "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e"
             },
             "dist": {
@@ -207,12 +207,12 @@
             "version": "9.15.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highlightjs/highlight.js.git",
+                "url": "git@github.com:isagalaev/highlight.js.git",
                 "reference": "3026925b1c57c9a9feb0713e663f8d1ef8ff08e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highlightjs/highlight.js/zipball/3026925b1c57c9a9feb0713e663f8d1ef8ff08e9",
+                "url": "https://api.github.com/repos/isagalaev/highlight.js/zipball/3026925b1c57c9a9feb0713e663f8d1ef8ff08e9",
                 "reference": "3026925b1c57c9a9feb0713e663f8d1ef8ff08e9"
             },
             "type": "bower-asset"
@@ -240,7 +240,7 @@
             "version": "1.17.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mochajs/mocha.git",
+                "url": "git@github.com:mochajs/mocha.git",
                 "reference": "7fc565ee3e225cb7a66bf39ae9c2c05b346675c1"
             },
             "dist": {
