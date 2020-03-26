@@ -12,7 +12,6 @@ composer install --no-dev --optimize-autoloader
 ./vendor/bin/drush cache:rebuild
 
 
-new txt test
 ```
 
 
