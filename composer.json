@@ -18,7 +18,10 @@
         "doctrine/lexer": "1.0.2",
         "monolog/monolog": "^1.17",
         "drush/drush": "^10.2",
-        "drupal/drush_language": "^1.0@RC"
+        "drupal/drush_language": "^1.0@RC",
+        "drupal/migrate_tools": "^4.5",
+        "drupal/migrate_source_csv": "^3.2",
+        "drupal/migrate_plus": "^4.2"
     },
     "repositories": [
         {
