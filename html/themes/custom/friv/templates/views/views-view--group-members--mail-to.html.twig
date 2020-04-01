@@ -46,10 +46,18 @@
   ]
 %}
 
-{{ rows }}
 
-<div{{ attributes.addClass(classes) }}>
-
-  <a href = "mailto: {% spaceless %}{{ rows|escape|striptags('<!-- -->') }}{% endspaceless %}"> test </a>
- 
+{% set conBody %}
+     {{ rows }}
+{% endset %}
+{% set i = 1 %}
+<div class="cover">
+<div class= "btn-group pull-right">
+<a href = "mailto:
+{% for row in conBody|split('<a href="mailto:')|slice(1) %}
+{{ conBody|split('<a href="mailto:')[i]|split('"')[0] ~ ';'}}
+{% set i = i + 1 %}
+{% endfor %}
+" class = "btn btn-yellow">Send mail til alle</a>
+</div>
 </div>

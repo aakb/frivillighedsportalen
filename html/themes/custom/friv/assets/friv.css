@@ -3,7 +3,12 @@
 
 }
 @media (min-width: 600px){
-.cover-wrap{
-    min-height: 440px;
+    .cover-wrap{
+        min-height: 440px;
+    }
 }
+.btn-yellow{
+    background-color: #ffc142;
+    border-color: #ffc142; 
+    color:#333333
 }

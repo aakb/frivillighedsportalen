@@ -77,8 +77,11 @@
           {% trans %}View activities{% endtrans %}
         </a>
       
-
-        <a href="mailto:{{ user.getEmail()}}" class="card__link">
+  {% set mail %}
+     {{ user_mail }}
+{% endset %}
+        
+        <a href="mailto: {{mail|split('<a href="mailto:')[1]|split('"')[0]}}" class="card__link">
           {% trans %}Mail to{% endtrans %}
         </a>
       </div>
