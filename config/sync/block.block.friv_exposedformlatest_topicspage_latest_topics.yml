@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /all-topics
+    pages: "/all-topics\r\n/dokumenter"
     negate: false
     context_mapping: {  }
