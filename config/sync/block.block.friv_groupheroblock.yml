@@ -10,7 +10,7 @@ dependencies:
 id: friv_groupheroblock
 theme: friv
 region: hero
-weight: -30
+weight: -29
 provider: null
 plugin: group_hero_block
 settings:

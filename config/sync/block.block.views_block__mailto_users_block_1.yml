@@ -1,6 +1,6 @@
 uuid: 2b9b16f0-769f-4364-ac2f-a5d64f80c5ee
 langcode: da
-status: true
+status: false
 dependencies:
   config:
     - views.view.mailto_users

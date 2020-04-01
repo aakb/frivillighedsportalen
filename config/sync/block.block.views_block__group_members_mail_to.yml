@@ -10,8 +10,8 @@ dependencies:
     - friv
 id: views_block__group_members_mail_to
 theme: friv
-region: complementary_bottom
-weight: -17
+region: hero
+weight: -23
 provider: null
 plugin: 'views_block:group_members-mail_to'
 settings:

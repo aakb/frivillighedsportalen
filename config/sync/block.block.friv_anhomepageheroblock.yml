@@ -13,7 +13,7 @@ dependencies:
 id: friv_anhomepageheroblock
 theme: friv
 region: hero
-weight: -27
+weight: -26
 provider: null
 plugin: 'block_content:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
 settings:
