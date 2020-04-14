@@ -162,17 +162,31 @@ display:
           plugin_id: bundle
           group: 1
       sorts:
-        created:
-          id: created
-          table: group_content_field_data
-          field: created
-          entity_type: group_content
-          entity_field: created
-          plugin_id: date
         label:
           id: label
           table: group_content_field_data
           field: label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: Titel
+          entity_type: group_content
+          entity_field: label
+          plugin_id: standard
+        label_1:
+          id: label_1
+          table: group_content_field_data
+          field: label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
           entity_type: group_content
           entity_field: label
           plugin_id: standard
@@ -406,30 +420,8 @@ display:
     display_options:
       display_extenders: {  }
       path: group/%group/members
-      sorts:
-        created:
-          id: created
-          table: group_content_field_data
-          field: created
-          entity_type: group_content
-          entity_field: created
-          plugin_id: date
-        label:
-          id: label
-          table: group_content_field_data
-          field: label
-          relationship: none
-          group_type: group
-          admin_label: sort_title
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: group_content
-          entity_field: label
-          plugin_id: standard
       defaults:
-        sorts: false
+        sorts: true
     cache_metadata:
       max-age: -1
       contexts:

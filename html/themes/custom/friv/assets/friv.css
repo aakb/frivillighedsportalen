@@ -4,11 +4,34 @@
 }
 @media (min-width: 600px){
     .cover-wrap{
-        min-height: 440px;
+        min-height: 300px;
     }
+    .cover{
+        height: 300px;
+    }
+    .teaser{
+        height: 140px;
+    }
+    .teaser__image{
+        max-height: 140px;
+    }
+
 }
 .btn-yellow{
     background-color: #ffc142;
     border-color: #ffc142; 
     color:#333333
+}
+.card__actionbar{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+}
+.teaser__title{
+    margin-bottom: 0px;
+
+}
+.teaser__content{
+    padding-bottom: 0px;
 }
