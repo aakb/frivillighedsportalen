@@ -1,0 +1,10 @@
+uuid: a8511ce3-4dfb-4c18-9556-9d8707a8985d
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_post
+id: post.featured
+label: Anbefalet
+targetEntityType: post
+cache: true

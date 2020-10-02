@@ -6,7 +6,7 @@ dependencies:
     - dropdown
     - social_post
 _core:
-  default_config_hash: 9IChKT1xRW3I7-oWdWMhAXoRYjpyJzG7PIVhkHaOlzU
+  default_config_hash: uIt1hEpE1gFewNJcEPN3ikV98Gg_IZetHB2SVd3_LE4
 id: post.field_visibility
 field_name: field_visibility
 entity_type: post
@@ -15,19 +15,19 @@ settings:
   allowed_values:
     -
       value: '0'
-      label: Fælles
+      label: Community
       description: 'Visible only to members who are logged in'
     -
       value: '1'
-      label: Offentlig
-      description: 'Synlig for alle besøgene på siden'
+      label: Public
+      description: 'Visible to all visitors of the site'
     -
       value: '2'
-      label: Fælles
+      label: Community
       description: 'Visible only to members who are logged in'
     -
       value: '3'
-      label: Gruppemedlemmer
+      label: 'Group members'
       description: 'Visible only to group members'
 module: dropdown
 locked: false

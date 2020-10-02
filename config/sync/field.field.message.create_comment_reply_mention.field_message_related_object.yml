@@ -8,7 +8,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: ys3XgCGvvOVYCfPvFa56YFUoEB6myTt4XjLUVGfp2B4
+  default_config_hash: ICM92OD6ztuG_4CtpWhCvSp_EGC7xRCi6aAm0Th7Y9c
 id: message.create_comment_reply_mention.field_message_related_object
 field_name: field_message_related_object
 entity_type: message
@@ -82,5 +82,20 @@ settings:
     handler_settings: {  }
   vote_result:
     handler: 'default:vote_result'
+    handler_settings: {  }
+  media:
+    handler: 'default:media'
+    handler_settings: {  }
+  private_message:
+    handler: 'default:private_message'
+    handler_settings: {  }
+  private_message_thread:
+    handler: 'default:private_message_thread'
+    handler_settings: {  }
+  pm_thread_access_time:
+    handler: 'default:pm_thread_access_time'
+    handler_settings: {  }
+  pm_thread_delete_time:
+    handler: 'default:pm_thread_delete_time'
     handler_settings: {  }
 field_type: dynamic_entity_reference

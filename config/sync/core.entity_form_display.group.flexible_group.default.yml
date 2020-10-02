@@ -63,7 +63,7 @@ third_party_settings:
       label: Settings
       region: content
 _core:
-  default_config_hash: pOjc9eeSJjtycWpGF-M5lW4mkpIb5cLwEfMcYpWGX4Y
+  default_config_hash: o6-nBnmCgRGCaHUZj2veQpAOLMCl7TLd_QD2rW2k-ag
 id: group.flexible_group.default
 targetEntityType: group
 bundle: flexible_group
@@ -103,6 +103,7 @@ content:
       preview_image_style: social_x_large
       crop_preview_image_style: crop_thumbnail
       crop_list:
+        - hero_small
         - hero
         - teaser
       progress_indicator: throbber

@@ -1,9 +1,7 @@
-uuid: adb0674a-f682-44cb-8165-826123512689
 langcode: da
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment.default
     - field.field.node.book.body
     - field.field.node.book.field_book_comments
     - field.field.node.book.field_book_image
@@ -15,8 +13,6 @@ dependencies:
     - group_core_comments
     - text
     - user
-_core:
-  default_config_hash: vkA-DGdsfIkoa1f9Wlf6UgdAC5BaKTw1tq7C6u8P_Y8
 id: node.book.default
 targetEntityType: node
 bundle: book
@@ -28,7 +24,6 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_book_comments:
     type: comment_group_content
     weight: 2
@@ -36,43 +31,12 @@ content:
     settings:
       pager_id: 0
     third_party_settings: {  }
-    region: content
   field_files:
     type: file_default
     weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
-    region: content
-  flag_follow_content:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  groups_type_flexible_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_secret_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   links:
     weight: 4
     region: content
@@ -84,6 +48,3 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
-  langcode: true
-  search_api_excerpt: true
-  shariff_field: true

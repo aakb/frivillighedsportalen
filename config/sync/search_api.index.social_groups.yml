@@ -11,7 +11,7 @@ dependencies:
     - search_api.server.social_database
     - core.entity_view_mode.group.teaser
 _core:
-  default_config_hash: Ed3QodM_5VMVirtscZV64UyLSBVNL0B4_UJSKAMhC00
+  default_config_hash: tUFXFR3gN_XD85cd0oLbYRHP-Gwf0CZgtBjzeLfHyJI
 id: social_groups
 name: 'Social Groups'
 description: 'Default group index created for the Social distribution.'
@@ -73,6 +73,7 @@ field_settings:
         - group
 datasource_settings:
   'entity:group':
+    plugin_id: 'entity:group'
     bundles:
       default: true
       selected: {  }
@@ -148,6 +149,7 @@ processor_settings:
     weights:
       preprocess_index: -10
       preprocess_query: -10
+  language_with_fallback: {  }
   rendered_item:
     plugin_id: rendered_item
     weights:
@@ -227,6 +229,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
+  index_directly: false
   cron_limit: 50
 server: social_database

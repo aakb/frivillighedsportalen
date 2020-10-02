@@ -7,10 +7,12 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: f6Ksf9342jZNofFmN2HRAElWXSHUQ_80JIBipOam4rM
 id: socialblue_groupheroblock
 theme: socialblue
 region: hero
-weight: -29
+weight: null
 provider: null
 plugin: group_hero_block
 settings:

@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: tQ-MDDsFp4RzTuHm5OMu2SjbOtVGMK1rzYhxhYnrsBw
 id: socialblue_pagetitleblock
 theme: socialblue
 region: hero
@@ -23,7 +25,6 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      book: book
       event: event
       page: page
       topic: topic
@@ -32,6 +33,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/node/add/*\r\n/node/*/edit\r\n/node/*/delete\r\n/node/*/translations/add/*\r\n/forside\r\n/FAQ"
+    pages: "/node/add/*\r\n/node/*/edit\r\n/node/*/delete\r\n/node/*/translations/add/*"
     negate: true
     context_mapping: {  }

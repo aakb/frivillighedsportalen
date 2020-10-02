@@ -13,8 +13,8 @@ id: node.book.field_book_image
 field_name: field_book_image
 entity_type: node
 bundle: book
-label: Billede
-description: 'Beskær billedet for at vælge hvilke dele der skal vises.'
+label: Image
+description: 'Crop your image to select which part of your image to show on display.'
 required: false
 translatable: false
 default_value: {  }

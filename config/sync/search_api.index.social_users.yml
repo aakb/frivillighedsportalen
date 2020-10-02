@@ -12,12 +12,11 @@ dependencies:
     - field.storage.profile.field_profile_first_name
     - field.storage.profile.field_profile_interests
     - field.storage.profile.field_profile_last_name
-    - field.storage.profile.field_profile_nick_name
     - field.storage.profile.field_profile_profile_tag
     - search_api.server.social_database
     - core.entity_view_mode.profile.search_index
 _core:
-  default_config_hash: DISMSpL3sN3hwLfwzea6p8b8ZCaZnjde0lx5MYXnYhs
+  default_config_hash: m7VY6iBT_LU6nh559ipGnTMSi5AT3PBGuRfnCumh-7w
 id: social_users
 name: 'Social Users'
 description: 'Default users index created for the Social distribution.'
@@ -65,14 +64,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.profile.field_profile_last_name
-  field_profile_nick_name:
-    label: Nickname
-    datasource_id: 'entity:profile'
-    property_path: field_profile_nick_name
-    type: text
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_nick_name
   field_profile_profile_tag:
     label: 'Profile tag'
     datasource_id: 'entity:profile'
@@ -123,6 +114,7 @@ field_settings:
         - user
 datasource_settings:
   'entity:profile':
+    plugin_id: 'entity:profile'
     bundles:
       default: true
       selected: {  }
@@ -163,12 +155,12 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
-      - field_profile_nick_name
       - name
       - rendered_item
     weights:
       preprocess_index: -10
       preprocess_query: -10
+  language_with_fallback: {  }
   rendered_item:
     plugin_id: rendered_item
     weights:
@@ -228,7 +220,6 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
-      - field_profile_nick_name
       - name
       - rendered_item
     spaces: ''
@@ -243,7 +234,6 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
-      - field_profile_nick_name
       - name
       - rendered_item
     weights:
@@ -253,6 +243,6 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
+  index_directly: false
   cron_limit: 50
 server: social_database

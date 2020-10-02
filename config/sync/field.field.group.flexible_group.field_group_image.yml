@@ -8,13 +8,13 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: gfSMDaodVTavNFkx65ZEBci8Na_7paWsq24tyjS72lg
+  default_config_hash: 6YIk-lei6xu16-FnLFGfn9O9u3US3AYXxgIFhfnl0TM
 id: group.flexible_group.field_group_image
 field_name: field_group_image
 entity_type: group
 bundle: flexible_group
-label: 'Gruppe billede'
-description: 'Beskær billedet for at vælge hvilke dele der skal vises.'
+label: 'Group Image'
+description: 'Crop your image to select which part of your image to show on display.'
 required: false
 translatable: false
 default_value: {  }

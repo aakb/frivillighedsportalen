@@ -14,7 +14,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: 92DypJVTBk9RAojIcXfv18icSfCeu2ruTrrs_4dMYk8
+  default_config_hash: qiX0wOSo2Jbw9J7WpP8cfiPfSqdZBivJTfnPIiuezG4
 id: post.post.default
 targetEntityType: post
 bundle: post
@@ -37,7 +37,7 @@ content:
     third_party_settings: {  }
     region: content
   like_and_dislike:
-    weight: 2
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content

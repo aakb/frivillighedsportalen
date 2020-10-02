@@ -7,10 +7,12 @@ dependencies:
     - node
   theme:
     - socialblue
+_core:
+  default_config_hash: VmWM44zjZhOdhge4MgqTs3AB6kJIuOex20wwnv5BpMo
 id: booknavigation_2
 theme: socialblue
 region: complementary_top
-weight: -16
+weight: 0
 provider: null
 plugin: book_navigation
 settings:

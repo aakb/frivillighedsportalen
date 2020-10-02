@@ -21,5 +21,6 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
+  type: none
   context_mapping: {  }
 visibility: {  }

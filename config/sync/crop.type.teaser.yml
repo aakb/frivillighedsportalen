@@ -3,8 +3,8 @@ langcode: da
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: vyCdkkefvOpkZ7JeB2BoNPPPIT2tyd8DmKJI-Zc0bro
-label: Lille
+  default_config_hash: mYXaobSn0HnXzQgZvKfwbpCuXiE2Pdg4xkOSuf0Hpw4
+label: Small
 id: teaser
 description: 'Teaser image in overviews'
 aspect_ratio: '220:220'

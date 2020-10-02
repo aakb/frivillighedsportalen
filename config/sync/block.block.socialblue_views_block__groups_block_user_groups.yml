@@ -9,10 +9,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: CkJxvoJ7X52KqUuazveJCzB-g9OaveHaZxM7deoydxE
 id: socialblue_views_block__groups_block_user_groups
 theme: socialblue
 region: complementary_bottom
-weight: -19
+weight: 4
 provider: null
 plugin: 'views_block:groups-block_user_groups'
 settings:
@@ -22,6 +24,7 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  type: none
 visibility:
   request_path:
     id: request_path

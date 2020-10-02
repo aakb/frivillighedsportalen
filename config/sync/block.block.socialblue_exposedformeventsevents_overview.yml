@@ -10,10 +10,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: nh5w2HyyMdVmLkORoql-7P8RXgsF_bl26XLi2MFy49w
 id: socialblue_exposedformeventsevents_overview
 theme: socialblue
 region: complementary_top
-weight: -15
+weight: 1
 provider: null
 plugin: 'views_exposed_filter_block:events-events_overview'
 settings:

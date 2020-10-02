@@ -1,4 +1,4 @@
-uuid: 50e13b47-e101-49e3-a44f-d80433087a72
+uuid: null
 langcode: da
 status: true
 dependencies:
@@ -31,6 +31,7 @@ third_party_settings:
         required_fields: true
         id: visibility
         classes: card
+      region: content
     group_description:
       children:
         - body
@@ -43,6 +44,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_title:
       children:
         - title
@@ -56,6 +58,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_attachments:
       children:
         - field_files
@@ -68,8 +71,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
-_core:
-  default_config_hash: DJQTgl5JstMJYoByHCU0REJK3UWyrPBw_ydgpe2I6-g
+      region: content
 id: node.book.default
 targetEntityType: node
 bundle: book
@@ -82,6 +84,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -172,6 +175,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
 hidden:

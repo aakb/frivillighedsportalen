@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: 3CkEvjilrbSxQIB-0flb0U90exb0vh7gyQJuYWrxvJ8
 id: socialblue_views_block__activity_stream_group_block_stream_group
 theme: socialblue
 region: content
@@ -22,6 +24,7 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
+  type: none
 visibility:
   request_path:
     id: request_path

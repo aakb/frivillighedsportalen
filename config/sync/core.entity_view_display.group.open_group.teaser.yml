@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: PNgCWEqaC2TCb47rcG5TmkYRANaY61Q-kt3jG4hcJFk
+  default_config_hash: djRBpTWWVm9L2AejYf_eoLuO1gNpxzfjvuTOcLb5WrI
 id: group.open_group.teaser
 targetEntityType: group
 bundle: open_group
