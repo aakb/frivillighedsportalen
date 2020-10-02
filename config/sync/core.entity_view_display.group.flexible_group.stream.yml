@@ -12,7 +12,7 @@ dependencies:
     - field.field.group.flexible_group.field_group_location
     - group.type.flexible_group
 _core:
-  default_config_hash: g_tUlvNiixpkhGaludEae0JrYQR5jgAZS8b9ahlt-_M
+  default_config_hash: DB3i_1Dtgi8elSB722JU-cgbgdPwmmVbEs6D_uxMnJg
 id: group.flexible_group.stream
 targetEntityType: group
 bundle: flexible_group

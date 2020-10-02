@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: ttxaKuxOXNBOVRhBP19lSnXWA1LFxjYkmqqlkNX6mWE
+  default_config_hash: M-o2wxGWCStFnJRxyAXkfodg1RG9tYWYIDAekgwAvi4
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
@@ -20,7 +20,6 @@ description: 'Activity stream notifications on a profile'
 tag: ''
 base_table: activity_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -47,7 +46,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -147,6 +146,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -186,6 +187,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -223,6 +226,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -254,7 +259,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Meddelelser
+      title: Notifications
       header: {  }
       footer: {  }
       empty:
@@ -268,7 +273,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Du har ingen notifikationer.'
+            value: 'You do not have any notifications.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -284,7 +289,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Alt
+            title: All
           title_enable: false
           title: ''
           default_argument_type: current_user
@@ -310,7 +315,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: true
-      use_more_text: 'Alle notifikationer'
+      use_more_text: 'All notifications'
     cache_metadata:
       max-age: -1
       contexts:
@@ -325,7 +330,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Blok
+    display_title: Block
     position: 2
     display_options:
       display_extenders: {  }

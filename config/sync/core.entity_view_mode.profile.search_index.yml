@@ -5,8 +5,8 @@ dependencies:
   module:
     - profile
 _core:
-  default_config_hash: wmO6xCxLIrGhfwHdZnry41ZEiacB3O0VogCoyxIgWuI
+  default_config_hash: IXgDw-AJONSxu5WE88E71EeNUVo2_pkuRg9tcRRtSZ8
 id: profile.search_index
-label: Søgeindeks
+label: 'Search Index'
 targetEntityType: profile
 cache: true

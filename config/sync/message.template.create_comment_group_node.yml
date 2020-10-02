@@ -19,10 +19,10 @@ third_party_settings:
     activity_aggregate: true
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: Xpiwy9_US7kX5AIDS0E5D9Xt5t4o_RPJtBSBZr9NcQY
+  default_config_hash: dRWI6z7lDhhTLYUL0g5M2Y693S-yKzL_jl9AGd8Zba0
 template: create_comment_group_node
-label: 'Opret kommentar til besked i gruppen'
-description: 'En bruger har oprettet en kommentar til indhold i gruppen'
+label: 'Create comment on node in the group'
+description: 'A user add a comment to content in the group'
 text:
   -
     value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type] in <a href=\"[message:gurl]\">[message:gtitle]</a></p>\n"

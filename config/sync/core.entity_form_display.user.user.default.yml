@@ -10,16 +10,14 @@ dependencies:
     - field.field.user.user.field_phone
   module:
     - field_group
-    - text
     - user
 third_party_settings:
   field_group:
     group_information:
       children:
         - account
-        - field_frivillig
       parent_name: ''
-      weight: 1
+      weight: 0
       label: 'Account information'
       format_type: fieldset
       format_settings:
@@ -32,7 +30,7 @@ third_party_settings:
       children:
         - timezone
       parent_name: ''
-      weight: 5
+      weight: 1
       format_type: fieldset
       format_settings:
         id: ''
@@ -42,7 +40,7 @@ third_party_settings:
       label: 'Locale settings'
       region: content
 _core:
-  default_config_hash: pRQ6ymdA2LS1Ssy6jQIpcFyAkOgrFCOfnW5S1j_knPE
+  default_config_hash: 0nZ2z-1drifgtazQ7sCHMq5tzD4JvQ5oYqoHa0z3koI
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -53,50 +51,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_consent:
-    weight: 7
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_firstname:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_frivillig:
-    weight: 6
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_lastname:
-    weight: 10
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_phone:
-    weight: 11
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   private_messages:
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   timezone:
     weight: 0
     region: content
@@ -104,6 +63,11 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
+  field_consent: true
+  field_firstname: true
+  field_frivillig: true
+  field_lastname: true
+  field_phone: true
   groups: true
   langcode: true
   language: true

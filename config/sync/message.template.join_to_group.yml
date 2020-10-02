@@ -19,9 +19,9 @@ third_party_settings:
     activity_aggregate: false
     activity_entity_condition: ''
 _core:
-  default_config_hash: Ec3_5IyNhcMOlY0h_xEJ5CtGv-XWJoRcdEVpnzgtUU4
+  default_config_hash: OvXrZwb01RJEPwsy3e2YTu00zv4jLO7MdwBS5g7VuYI
 template: join_to_group
-label: 'Tilmeld til gruppen'
+label: 'Join to group'
 description: 'A person joins a group I am managing'
 text:
   -

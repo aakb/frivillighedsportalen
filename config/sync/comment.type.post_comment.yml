@@ -3,8 +3,8 @@ langcode: da
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: hGHnIBzGy-ezfVmmfzoO6FbC-fhM8_KKG_Ysyae9xtk
+  default_config_hash: flofQ1DseZr_pldPg97CW8mMUjWACO6IzEAUVqqz6kg
 id: post_comment
-label: 'Skriv kommentar'
+label: 'Post comment'
 target_entity_type_id: post
 description: 'Comment on a post in the activity streams'

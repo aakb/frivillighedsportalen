@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.flexible_group
 _core:
-  default_config_hash: WY5Lu6JzEenwyHDhshtKAcnjBXz-b9TackCM3NVCWxA
+  default_config_hash: fbHARNEItS9rCzLTkOMXdSV9ICG0Bp9d1KzUtvMpBZM
 id: flexible_group-outsider
 label: Outsider
 weight: -101

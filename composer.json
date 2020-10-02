@@ -22,7 +22,8 @@
         "drupal/migrate_plus": "^4.2",
         "drupal/migrate_tools": "^4.5",
         "drupal/migrate_source_csv": "^3.2",
-        "drupal/twig_domquery": "^1.0@beta"
+        "drupal/twig_domquery": "^1.0@beta",
+        "drupal/field_group": "^3.0"
     },
     "repositories": [
         {

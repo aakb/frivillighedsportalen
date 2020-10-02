@@ -11,8 +11,8 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: vo_zw-ZU4gjWynbEmXqJGrwdkbdnVuVUohurx8Iit50
-name: 'Simpel side'
+  default_config_hash: Ec7_D0JD8wkn_g0ns1udq1Hovl1UbAhkbDnK5agzO8s
+name: 'Basic page'
 type: page
 description: 'Use basic pages for your static content, such as an ''About us'' page.'
 help: ''

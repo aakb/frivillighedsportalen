@@ -16,7 +16,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: LPXoB0rY5wFFUpL_vK-Fno0brMV_3CuhDzF5SbgDJXk
+  default_config_hash: mXxs8zpsOG505b8ChDw89wSloy1o7O7mnvzRirKI8rA
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -76,5 +76,6 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  private_message_link: true
   search_api_excerpt: true
   shariff_field: true

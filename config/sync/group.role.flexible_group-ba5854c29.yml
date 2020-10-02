@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.sitemanager
 _core:
-  default_config_hash: PM0TerfUpGE_tXrc_-xZbFMHuwe5fUi5vqh7QZaF6Gg
+  default_config_hash: nAm6IBiubbQmc4vdlNyuZkm7DeAqlArPG_V0zAaXUcs
 id: flexible_group-ba5854c29
 label: 'Site manager'
 weight: 4

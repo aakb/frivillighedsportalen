@@ -16,7 +16,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: 9sTjSemSHaUnHQeBsGy479G03O1t-_i_tHF7IHFPEO0
+  default_config_hash: enrP4YBdTvkG4fKEGvUuJTJOeWIe9WYydWsKbic7I5Y
 id: node.page.teaser
 targetEntityType: node
 bundle: page
@@ -32,7 +32,7 @@ content:
   field_page_image:
     type: image
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: social_x_large
       image_link: content
@@ -71,5 +71,6 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  private_message_link: true
   search_api_excerpt: true
   shariff_field: true

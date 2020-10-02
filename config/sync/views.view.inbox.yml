@@ -1,4 +1,4 @@
-uuid: ee74aaad-d0fe-4c07-8e17-65d3659d7e4e
+uuid: null
 langcode: da
 status: true
 dependencies:
@@ -7,16 +7,13 @@ dependencies:
   module:
     - private_message
     - user
-_core:
-  default_config_hash: dEDMnLE9uOb4bikmZkm5HNm983RUNvevcR_PmSj0clA
 id: inbox
-label: Indbakke
+label: Inbox
 module: views
 description: ''
 tag: ''
 base_table: private_message_threads
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -42,7 +39,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -147,7 +144,7 @@ display:
           entity_type: private_message_thread
           entity_field: updated
           plugin_id: date
-      title: Indbakke
+      title: Inbox
       header: {  }
       footer: {  }
       empty:
@@ -161,7 +158,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Du har ikke nogle private beskeder endnu. Klik på knappen til højre for at skrive en ny besked.'
+            value: 'You do not have any private messages yet. Click on the button on the right to start a new message.'
             format: basic_html
           plugin_id: text
       relationships:
@@ -199,7 +196,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alt
+            title: All
           title_enable: false
           title: ''
           default_argument_type: current_user

@@ -1,0 +1,19 @@
+uuid: cad508ce-f7e4-4ef7-9bac-c11c4db5cc38
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_grupper
+    - profile.type.profile
+id: profile.profile.field_grupper
+field_name: field_grupper
+entity_type: profile
+bundle: profile
+label: Grupper
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

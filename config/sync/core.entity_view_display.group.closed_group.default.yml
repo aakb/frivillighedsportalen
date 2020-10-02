@@ -9,7 +9,7 @@ dependencies:
     - field.field.group.closed_group.field_group_location
     - group.type.closed_group
 _core:
-  default_config_hash: QINyh7YnF9AP4gx-KHy-mUPDUoov06tQz57VkM1YpPE
+  default_config_hash: isMnBU3AQ5AEIX1WIqi7UXzI2N-Tz27l97Xibim2cRY
 id: group.closed_group.default
 targetEntityType: group
 bundle: closed_group
