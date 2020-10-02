@@ -3,6 +3,13 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.profile.profile.field_foedselsdag
+    - field.field.profile.profile.field_frivilligstart
+    - field.field.profile.profile.field_grupper
+    - field.field.profile.profile.field_koen
+    - field.field.profile.profile.field_koerekort
+    - field.field.profile.profile.field_location
+    - field.field.profile.profile.field_lokalcenter
     - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
@@ -11,22 +18,80 @@ dependencies:
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_nick_name
     - field.field.profile.profile.field_profile_organization
     - field.field.profile.profile.field_profile_phone_number
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_type
     - profile.type.profile
   module:
     - address
     - text
 _core:
-  default_config_hash: 58km7VIH-fzAz4VoS-3UD6-va3DXkuyuCg7Q5n0jPdQ
+  default_config_hash: dnjwto7vi1Xhb0sx5KL_Oexy3UD6Q3LbxkPfS5uvZNw
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile
 mode: default
 content:
+  field_foedselsdag:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_frivilligstart:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_grupper:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_koen:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_koerekort:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_location:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lokalcenter:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_profile_address:
     weight: 2
     label: visually_hidden
@@ -79,6 +144,8 @@ hidden:
   field_profile_function: true
   field_profile_image: true
   field_profile_last_name: true
+  field_profile_nick_name: true
   field_profile_organization: true
   field_profile_show_email: true
+  field_type: true
   search_api_excerpt: true

@@ -9,7 +9,7 @@ dependencies:
     - group
     - user
 _core:
-  default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
+  default_config_hash: OL21L2xjoXlc_17Fycs9SNyTwcbxw4axjRciaZOzl9Q
 id: newest_groups
 label: 'Newest groups'
 module: views
@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: groups_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -45,11 +44,11 @@ display:
         options:
           submit_button: Filter
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -60,16 +59,16 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Første'
-            last: 'Sidste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           quantity: 9
       style:
         type: default
@@ -160,7 +159,7 @@ display:
           entity_type: group
           entity_field: created
           plugin_id: date
-      title: 'Alle grupper'
+      title: 'All groups'
       header: {  }
       footer: {  }
       empty: {  }
@@ -208,13 +207,14 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle grupper'
+      use_more_text: 'All groups'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user.permissions
+        0: 'languages:language_content'
+        1: 'languages:language_interface'
+        2: user.permissions
+        user: user
       tags: {  }
   page_all_groups:
     display_plugin: page
@@ -239,7 +239,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Gruppetype
+            label: 'Group type'
             description: ''
             use_operator: false
             operator: type_op
@@ -254,6 +254,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

@@ -5,9 +5,9 @@ dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: 7SovxMOzfqK536uzQ2Y0QMLu48DHZoGsO-ws2sQhaAw
+  default_config_hash: NcFE9ebCHoVd-TtSPiI2bL777R-or4wqY8Vw__SmuZY
 id: public_group-member
-label: Medlem
+label: Member
 weight: -100
 internal: true
 audience: member

@@ -13,7 +13,7 @@ id: node.book.field_book_comments
 field_name: field_book_comments
 entity_type: node
 bundle: book
-label: Kommentarer
+label: Comments
 description: ''
 required: false
 translatable: false

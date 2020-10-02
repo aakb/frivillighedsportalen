@@ -23,7 +23,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: psOy9JYXqH1kjMmGPXNIsB_qmfjt_8eKxTJRH-FiG1s
+  default_config_hash: Sp-i_sjo5MTn_lytgUXUCpEyD6hAMw-hVSnUPOXa8hY
 id: node.event.activity_comment
 targetEntityType: node
 bundle: event
@@ -115,5 +115,6 @@ hidden:
   groups_type_open_group: true
   langcode: true
   like_and_dislike: true
+  private_message_link: true
   search_api_excerpt: true
   shariff_field: true

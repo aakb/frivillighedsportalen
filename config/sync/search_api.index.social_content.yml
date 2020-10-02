@@ -11,7 +11,7 @@ dependencies:
     - search_api.server.social_database
     - core.entity_view_mode.node.search_index
 _core:
-  default_config_hash: MbX9nCJS7GUDX3vfIkeKB6-6wVbLokpUUXwFaw2oO58
+  default_config_hash: i5b5PgQnBCQRIl4RvQI0_D7TZFcMIujMBfSEO1eYWyA
 id: social_content
 name: 'Social Content'
 description: 'Default content index created for the Social distribution.'
@@ -150,6 +150,7 @@ processor_settings:
     weights:
       preprocess_index: -10
       preprocess_query: -10
+  language_with_fallback: {  }
   rendered_item:
     plugin_id: rendered_item
     weights:

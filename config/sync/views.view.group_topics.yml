@@ -5,26 +5,29 @@ dependencies:
   config:
     - core.entity_view_mode.group_content.teaser
     - group.content_type.closed_group-group_node-topic
+    - group.content_type.flexible_group-group_node-topic
     - group.content_type.open_group-group_node-topic
     - group.content_type.public_group-group_node-topic
+    - group.content_type.secret_group-group_node-topic
     - group.type.closed_group
+    - group.type.flexible_group
     - group.type.open_group
     - group.type.public_group
+    - group.type.secret_group
     - taxonomy.vocabulary.topic_types
   module:
     - group
     - node
     - taxonomy
 _core:
-  default_config_hash: w68Lg24lxOIZS50lCZN4ldYaaotGC6Zf5hvGlTC7uOg
+  default_config_hash: QfYYx-ckbKscwFS5Uy5F8QSkZx1T0fqPvxC_T-sUwtE
 id: group_topics
-label: 'Emner for gruppe'
+label: 'Group Topics'
 module: views
 description: ''
 tag: ''
 base_table: group_content_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -52,8 +55,8 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: ascending
           sort_desc_label: descending
@@ -66,12 +69,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -160,6 +163,8 @@ display:
             closed_group-group_node-topic: closed_group-group_node-topic
             open_group-group_node-topic: open_group-group_node-topic
             public_group-group_node-topic: public_group-group_node-topic
+            flexible_group-group_node-topic: flexible_group-group_node-topic
+            secret_group-group_node-topic: secret_group-group_node-topic
           group: 1
           exposed: false
           expose:
@@ -175,6 +180,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -218,6 +225,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -250,7 +259,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Publiceringsstatus
+            label: 'Published status'
             description: ''
             use_operator: false
             operator: status_op
@@ -264,6 +273,8 @@ display:
               administrator: '0'
               contentmanager: '0'
               sitemanager: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -302,6 +313,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -331,7 +344,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: 'Emner for gruppe'
+      title: 'Group Topics'
       header: {  }
       footer: {  }
       empty:
@@ -344,7 +357,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen emner i denne gruppe'
+          content: 'No topics in this group'
           plugin_id: text_custom
       relationships:
         gc__node:
@@ -373,7 +386,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -399,6 +412,8 @@ display:
               closed_group: closed_group
               open_group: open_group
               public_group: public_group
+              flexible_group: flexible_group
+              secret_group: secret_group
             multiple: 0
             operation: view
           break_phrase: false
@@ -428,7 +443,7 @@ display:
   page_group_topics:
     display_plugin: page
     id: page_group_topics
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

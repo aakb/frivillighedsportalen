@@ -1,0 +1,31 @@
+uuid: 4894351e-1f1a-4d08-9338-c1804147ef5e
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+    - shariff
+  theme:
+    - friv
+id: friv_shariffsharebuttons
+theme: friv
+region: complementary_bottom
+weight: -16
+provider: null
+plugin: shariff_block
+settings:
+  id: shariff_block
+  label: 'Share this page'
+  provider: shariff
+  label_display: visible
+  shariff_default_settings: 1
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+      page: page
+      topic: topic
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

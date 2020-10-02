@@ -1,0 +1,20 @@
+uuid: ada8ebb6-3e9a-4e08-9627-3df51fadab6a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_firstname
+  module:
+    - user
+id: user.user.field_firstname
+field_name: field_firstname
+entity_type: user
+bundle: user
+label: Fornavn
+description: 'Indtast dit/dine fornave(e) her'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

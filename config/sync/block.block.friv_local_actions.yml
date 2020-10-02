@@ -1,0 +1,25 @@
+uuid: edbf6306-17b9-4eb4-8ee1-e2ef5b26d24f
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - friv
+id: friv_local_actions
+theme: friv
+region: complementary_top
+weight: -22
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/admin/reports/*\r\n/group/*/membership\r\n/node/*/all-enrollments"
+    negate: true
+    context_mapping: {  }

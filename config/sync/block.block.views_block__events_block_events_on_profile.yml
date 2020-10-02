@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: ZgUg_9wsWsT3IEg4nEwUirYuh3QiFgrDit54jtVZBQU
 id: views_block__events_block_events_on_profile
 theme: socialbase
 region: complementary_bottom
@@ -22,6 +24,7 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  type: none
 visibility:
   request_path:
     id: request_path

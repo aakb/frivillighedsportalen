@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
     - user
 _core:
-  default_config_hash: 5XmB0TdrQv500vSDploRnCfyrbBrMfB975V9S17CRaQ
+  default_config_hash: q2q1Ylfh4nQOHKbKS9jCKipcNXijytSip0H1DBqyjNE
 id: user.user.register
 targetEntityType: user
 bundle: user
@@ -18,8 +23,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  private_messages:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   contact: true
+  field_consent: true
+  field_firstname: true
+  field_frivillig: true
+  field_lastname: true
+  field_phone: true
   groups: true
   langcode: true
   language: true

@@ -1,3 +1,20 @@
+# Frivillighedsportalen
+
+## Manual Installation
+
+```sh
+#using --classmap-authoritative breaks drush
+composer install --no-dev --optimize-autoloader
+./vendor/bin/drush --yes updatedb
+./vendor/bin/drush --yes config:import
+./vendor/bin/drush --yes locale:update
+./vendor/bin/drush language:import:translations --no-replace-customized
+./vendor/bin/drush cache:rebuild
+
+
+```
+
+
 This is a composer based installer for the [Open Social distribution](http://www.drupal.org/project/social).
 
 # Prerequisites
@@ -36,3 +53,5 @@ We are also available on Slack. Visit https://www.drupal.org/slack to see how yo
  Every week we are available on Slack on:
  - Wednesday between 16:00 and 17:00 Europe/Amsterdam Timezone
 - Friday between 10:00 and 11:00 Europe/Amsterdam Timezone
+
+

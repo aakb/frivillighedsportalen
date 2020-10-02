@@ -12,15 +12,14 @@ dependencies:
     - user
     - views_bulk_operations
 _core:
-  default_config_hash: bAd9tjZSoYEPh434_xZHZbEQ2qUsReEwE1HTJEjIgXU
+  default_config_hash: HnlK_0ROWxcBuGyD-u-X4aPf6q4NvOBOKmYlV9HwXAU
 id: user_admin_people
-label: Personer
+label: People
 module: user
-description: 'Find og håndtér personer som bruger dit site.'
+description: 'Find and manage people interacting with your site.'
 tag: default
 base_table: users_field_data
 base_field: uid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -46,11 +45,11 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -59,18 +58,18 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Forrige'
-            next: 'Næste ›'
-            first: '« Første'
-            last: 'Sidste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           quantity: 9
       style:
         type: table
@@ -218,7 +217,7 @@ display:
           batch_size: 10
           form_step: true
           buttons: false
-          clear_on_exposed: false
+          clear_on_exposed: true
           action_title: Action
           selected_actions:
             comment_delete_action: 0
@@ -230,6 +229,7 @@ display:
             vbo_cancel_user_action: vbo_cancel_user_action
             views_bulk_operations_delete_entity: 0
             'entity:save_action:user': 0
+            social_group_add_members_to_group_action: social_group_add_members_to_group_action
           preconfiguration:
             user_unblock_user_action:
               label_override: ''
@@ -249,7 +249,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Brugernavn
+          label: Username
           exclude: false
           alter:
             alter_text: false
@@ -346,8 +346,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Aktiv
-            format_custom_false: Blokeret
+            format_custom_true: Active
+            format_custom_false: Blocked
           entity_type: user
           entity_field: status
         roles_target_id:
@@ -357,7 +357,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Roller
+          label: Roles
           exclude: false
           alter:
             alter_text: false
@@ -408,7 +408,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Medlem i'
+          label: 'Member for'
           exclude: false
           alter:
             alter_text: false
@@ -464,7 +464,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Seneste tilgang'
+          label: 'Last access'
           exclude: false
           alter:
             alter_text: false
@@ -520,7 +520,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Handlinger
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -635,7 +635,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Fornavn
+          label: 'First name'
           exclude: true
           alter:
             alter_text: false
@@ -698,7 +698,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Efternavn
+          label: 'Last name'
           exclude: true
           alter:
             alter_text: false
@@ -768,7 +768,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Navn eller e-mail indeholder'
+            label: 'Name or email contains'
             description: ''
             use_operator: false
             operator: combine_op
@@ -783,6 +783,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -824,6 +826,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -852,7 +856,7 @@ display:
           exposed: true
           expose:
             operator_id: roles_target_id_op
-            label: Rolle
+            label: Role
             description: ''
             use_operator: false
             operator: roles_target_id_op
@@ -865,6 +869,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -892,7 +898,7 @@ display:
           exposed: true
           expose:
             operator_id: permission_op
-            label: Tilladelse
+            label: Permission
             description: ''
             use_operator: false
             operator: permission_op
@@ -905,6 +911,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -944,6 +952,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: Status
@@ -957,11 +967,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Aktiv
+                title: Active
                 operator: '='
                 value: '1'
               2:
-                title: Blokeret
+                title: Blocked
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -983,7 +993,7 @@ display:
           exposed: true
           expose:
             operator_id: id_op
-            label: Gruppe
+            label: Group
             description: ''
             use_operator: false
             operator: id_op
@@ -1000,6 +1010,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ID
@@ -1044,6 +1056,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1076,7 +1090,7 @@ display:
           exposed: true
           expose:
             operator_id: created_op
-            label: Registreringsdato
+            label: 'Registration date'
             description: ''
             use_operator: true
             operator: created_op
@@ -1093,6 +1107,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1125,7 +1141,7 @@ display:
           exposed: true
           expose:
             operator_id: login_op
-            label: 'Seneste login'
+            label: 'Last login'
             description: ''
             use_operator: true
             operator: login_op
@@ -1142,6 +1158,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1187,7 +1205,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: standard
-      title: Personer
+      title: People
       empty:
         area_text_custom:
           id: area_text_custom
@@ -1198,11 +1216,11 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen personer til rådighed.'
+          content: 'No people available.'
           plugin_id: text_custom
       use_more: false
       use_more_always: false
-      use_more_text: mere
+      use_more_text: more
       display_comment: ''
       use_ajax: false
       hide_attachment_summary: false
@@ -1263,22 +1281,22 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       path: admin/people/list
       show_admin_links: false
       menu:
         type: 'default tab'
-        title: Vis
-        description: 'Find og håndtér personer som bruger dit site.'
+        title: List
+        description: 'Find and manage people interacting with your site.'
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Personer
-        description: 'Håndtér brugerkonti, roller og tilladelser.'
+        title: People
+        description: 'Manage user accounts, roles, and permissions.'
         menu_name: admin
         weight: 0
       defaults:

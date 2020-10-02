@@ -1,0 +1,19 @@
+uuid: b4f5ce60-1489-4323-b72d-b338851bd17f
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_lokalcenter
+    - profile.type.profile
+id: profile.profile.field_lokalcenter
+field_name: field_lokalcenter
+entity_type: profile
+bundle: profile
+label: Lokalcenter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

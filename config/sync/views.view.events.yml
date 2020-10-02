@@ -6,13 +6,15 @@ dependencies:
     - core.entity_view_mode.node.small_teaser
     - core.entity_view_mode.node.teaser
     - node.type.event
+    - taxonomy.vocabulary.event_types
   module:
     - datetime
     - node
     - social_event
+    - taxonomy
     - user
 _core:
-  default_config_hash: S62CjB3X7jHYzK5Hx-bQdr9jh6lwjPe-w4sSSsUpmbE
+  default_config_hash: loCrNQ_bGUCjEMnxnnKxjrwixIfVWmoDUmRrCJ22yEo
 id: events
 label: 'Events Profile'
 module: views
@@ -20,7 +22,6 @@ description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -48,8 +49,8 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: ascending
           sort_desc_label: descending
@@ -62,17 +63,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Næste ›'
-            first: '« Første'
-            last: 'Sidste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           quantity: 9
       style:
         type: default
@@ -154,6 +155,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -182,7 +185,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Udgivelsesstatus
+            label: 'Publish status'
             description: ''
             use_operator: false
             operator: status_op
@@ -194,6 +197,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -232,6 +237,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -349,6 +356,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -377,7 +386,7 @@ display:
           exposed: false
           expose:
             operator_id: ''
-            label: Udgivelsesstatus
+            label: 'Publish status'
             description: ''
             use_operator: false
             operator: status_op
@@ -389,6 +398,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -421,7 +432,7 @@ display:
           exposed: false
           expose:
             operator_id: field_event_date_value_op
-            label: 'Tidspunkt for begivenhed'
+            label: 'Event time'
             description: ''
             use_operator: false
             operator: field_event_date_value_op
@@ -433,6 +444,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -469,6 +482,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -507,6 +522,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -525,7 +542,7 @@ display:
         operator: AND
         groups:
           1: AND
-      title: 'Kommende begivenheder'
+      title: 'Upcoming events'
     cache_metadata:
       max-age: -1
       contexts:
@@ -545,7 +562,7 @@ display:
       path: user/%user/events
       menu:
         type: none
-        title: Begivenheder
+        title: Events
         description: ''
         expanded: false
         parent: ''
@@ -554,7 +571,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Emner
+        title: Topics
         description: ''
         weight: 0
       exposed_block: true
@@ -585,6 +602,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -613,7 +632,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Udgivelsesstatus
+            label: 'Publish status'
             description: ''
             use_operator: false
             operator: status_op
@@ -625,6 +644,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -657,7 +678,7 @@ display:
           exposed: true
           expose:
             operator_id: field_event_date_value_op
-            label: Startdato
+            label: 'Start date'
             description: null
             use_operator: false
             operator: field_event_date_value_op
@@ -667,9 +688,11 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
-            label: 'Status for begivenhed'
+            label: 'Event status'
             description: ''
             identifier: field_event_date_value
             optional: false
@@ -680,7 +703,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Kommende begivenheder'
+                title: 'Upcoming events'
                 operator: '>='
                 value:
                   type: offset
@@ -719,6 +742,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -756,6 +781,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -769,6 +796,55 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: node_access
+        field_event_type_target_id:
+          id: field_event_type_target_id
+          table: node__field_event_type
+          field: field_event_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_event_type_target_id_op
+            label: 'What type of events do you want to see?'
+            description: ''
+            use_operator: false
+            operator: field_event_type_target_id_op
+            identifier: event_type_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+            reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: event_types
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       defaults:
         filters: false
         filter_groups: false

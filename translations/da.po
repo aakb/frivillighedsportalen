@@ -1,0 +1,701 @@
+# Danish translation of Frivillighedsportalen
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2020-03-10 12:31+0000\n"
+"PO-Revision-Date: 2020-03-10 12:31+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Operations"
+msgstr "Operations"
+
+msgid "Author"
+msgstr "Author"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "No log messages available."
+msgstr "No log messages available."
+
+msgid "Name"
+msgstr "Name"
+
+msgid "True"
+msgstr "True"
+
+msgid "Icon"
+msgstr "Icon"
+
+msgid "Updated"
+msgstr "Updated"
+
+msgid "User"
+msgstr "User"
+
+msgid "All"
+msgstr "Alt"
+
+msgid "Page"
+msgstr "Page"
+
+msgid "Published"
+msgstr "Published"
+
+msgid "Severity"
+msgstr "Severity"
+
+msgid "Watchdog"
+msgstr "Watchdog"
+
+msgid "Desc"
+msgstr "Desc"
+
+msgid "Table"
+msgstr "Table"
+
+msgid "Sort by"
+msgstr "Sort by"
+
+msgid "Topics"
+msgstr "Dokumenter"
+
+msgid "Topic"
+msgstr "Dokument"
+
+msgid "This topic has been moved"
+msgstr "Dokument flyttet"
+
+msgid "‹ Previous"
+msgstr "‹ Previous"
+
+msgid "Next ›"
+msgstr "Next ›"
+
+msgid "Unpublished"
+msgstr "Unpublished"
+
+msgid "Apply"
+msgstr "Anvend"
+
+msgid "Grid"
+msgstr "Grid"
+
+msgid "Topics per page"
+msgstr "Dokumenter pr. side"
+
+msgid "New forum topics"
+msgstr "Nye dokumenter."
+
+msgid "Number of topics"
+msgstr "Antal dokumenter"
+
+msgid "Active forum topics"
+msgstr "Aktive dokumenter"
+
+msgid "Read the latest forum topics."
+msgstr "Læs de seneste dokumenter."
+
+msgid "Offset"
+msgstr "Offset"
+
+msgid ""
+"If you move this topic, you can leave a link in the old forum to the "
+"new forum."
+msgstr ""
+"Hvis du flytter dokumentet, kan du oprette et link fra den gamle til "
+"den nye placering."
+
+msgid "Newest first"
+msgstr "Newest first"
+
+msgid "Items per page"
+msgstr "Items per page"
+
+msgid "- All -"
+msgstr "- All -"
+
+msgid "Publishing status"
+msgstr "Publishing status"
+
+msgid "« First"
+msgstr "« First"
+
+msgid "Last »"
+msgstr "Last »"
+
+msgid "Published status"
+msgstr "Published status"
+
+msgid "Full content"
+msgstr "Full content"
+
+msgid "No media available."
+msgstr "No media available."
+
+msgid "Recent log messages"
+msgstr "Recent log messages"
+
+msgid "Asc"
+msgstr "Asc"
+
+msgid "Media type"
+msgstr "Media type"
+
+msgid "Active forum topics block"
+msgstr "Aktive dokumenter"
+
+msgid "New forum topics block"
+msgstr "Nye dokumenter"
+
+msgid "Delete media"
+msgstr "Delete media"
+
+msgid "Save media"
+msgstr "Save media"
+
+msgid "Publish media"
+msgstr "Publish media"
+
+msgid "Unpublish media"
+msgstr "Unpublish media"
+
+msgid ""
+"Several special characters are allowed, including space, period (.), "
+"hyphen (-), apostrophe ('), underscore (_), and the @ sign."
+msgstr ""
+" Flere special karakterer er tilladte heriblandt space, punktum (.), "
+"bindestreg (-), apostrof ('), underscore (_), og tegnet @. Brug evt. "
+"din emailadresse som brugernavn. "
+
+msgid "Flexible group functionality"
+msgstr "Fleksibel gruppe funktionalitet"
+
+msgid "Secret group functionality"
+msgstr "Hemmelig gruppe funktionalitet"
+
+msgid "Explore"
+msgstr "Udforsk"
+
+msgid "Message template"
+msgstr "Besked skabelon"
+
+msgid "Community"
+msgstr "Fælles"
+
+msgid "Unfollow this content"
+msgstr "Følg ikke dette indhold"
+
+msgid "Notification from %site_name"
+msgstr "Notification fra %site_name"
+
+msgid "Inbox"
+msgstr "Indbakke"
+
+msgid "Nickname"
+msgstr "Nickname"
+
+msgid "Manage members"
+msgstr "Administrer medlemmer"
+
+msgid "community"
+msgstr "fælles"
+
+msgid "in the community"
+msgstr "fælles"
+
+msgid "Show upcoming events (my, community and overview)"
+msgstr "Vis kommende begivenheder (mine, fælles og oversigt)"
+
+msgid "Group Topics"
+msgstr "Dokumenter for gruppe"
+
+msgid "Latest topics"
+msgstr "Seneste dokumenter"
+
+msgid "Displays the newest topics in the community"
+msgstr "Vis seneste fælles dokumenter"
+
+msgid "Newest topics"
+msgstr "Seneste dokumenter"
+
+msgid "No topics found"
+msgstr "Ingen dokumenter fundet"
+
+msgid "Recently created topics"
+msgstr "Nyligt oprettede dokumenter"
+
+msgid "No topics in this group"
+msgstr "Ingen dokumenter i denne gruppe"
+
+msgid "New Topic"
+msgstr "Nyt dokument"
+
+msgid "Create New Topic"
+msgstr "Opret nyt dokument"
+
+msgid "View my topics"
+msgstr "Vis mine dokumenter"
+
+msgid "Topics created"
+msgstr "Dokumenter oprettet"
+
+msgid "Say something to the Community"
+msgstr "Skriv noget til alle"
+
+msgid "topic"
+msgstr "dokument"
+
+msgid "Notification archive"
+msgstr "Notifkations arkiv"
+
+msgid "Create comment on node in the community"
+msgstr "Opret en kommentar til det fælles indhold"
+
+msgid "A user add a comment to content in the community"
+msgstr "En bruger har oprettet en kommentar til det fælles indhold"
+
+msgid "Create comment on post in the community"
+msgstr "Opret en kommentar til en fælles besked"
+
+msgid "A user add a comment to post in the community"
+msgstr "En bruger har oprettet en kommentar til en fælles besked"
+
+msgid "Create comment on node in the group"
+msgstr "Opret kommentar til besked i gruppen"
+
+msgid "A user add a comment to content in the group"
+msgstr "En bruger har oprettet en kommentar til indhold i gruppen"
+
+msgid "Create comment on post in the group"
+msgstr "Opret kommentar til beskeden i gruppen"
+
+msgid "A user add a comment to post in the group"
+msgstr "*En bruger har tilføjet en kommentar til en besked i gruppen"
+
+msgid ""
+"<p><a "
+"href=\"[message:author:url:absolute]\">[message:author:display-name]</a> "
+"commented on a post in <a "
+"href=\"[message:gurl]\">[message:gtitle]</a></p>"
+msgstr ""
+"<p><a "
+"href=\"[message:author:url:absolute]\">[message:author:display-name]</a> "
+"kommenterede på en besked i <a "
+"href=\"[message:gurl]\">[message:gtitle]</a></p>"
+
+msgid ""
+"<p><a "
+"href=\"[message:author:url:absolute]\">[message:author:display-name]</a> "
+"and @count others commented on a post in <a "
+"href=\"[message:gurl]\">[message:gtitle]</a></p>"
+msgstr ""
+"<p><a "
+"href=\"[message:author:url:absolute]\">[message:author:display-name]</a> "
+"og @count andre kommenterede på en besked i <a "
+"href=\"[message:gurl]\">[message:gtitle]</a></p>"
+
+msgid "A user created an event in the community"
+msgstr "En bruger har oprettet et fælles event"
+
+msgid "Create post in the community"
+msgstr "Opret en fælles besked"
+
+msgid "A user created a post in the community"
+msgstr "En bruger har oprettet en fælles besked"
+
+msgid ""
+"<p><a "
+"href=\"[message:author:url:absolute]\">[message:author:display-name]</a> "
+"posted in <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
+msgstr ""
+"<p><a "
+"href=\"[message:author:url:absolute]\">[message:author:display-name]</a> "
+"skrev i <a href=\"[message:gurl]\">[message:gtitle]</a></p>"
+
+msgid "A user created a topic in the community"
+msgstr "En bruger har oprettet et fælles dokument"
+
+msgid "Join to group"
+msgstr "Tilmeld til gruppen"
+
+msgid "Explore page for LU"
+msgstr "Udforsk siden for LU"
+
+msgid "Explore Stream"
+msgstr "Udforsk strømmen"
+
+msgid "You do not have any notifications."
+msgstr "Du har ingen notifikationer."
+
+msgid "All notifications"
+msgstr "Alle notifikationer"
+
+msgid "Crop your image to select which part of your image to show on display."
+msgstr "Beskær billedet for at vælge hvilke dele der skal vises."
+
+msgid "Enrolled"
+msgstr "Tilmeldt"
+
+msgid "Community - visible only to logged in members"
+msgstr "Alle - kun synligt for medlemmer der er logget ind"
+
+msgid "ascending"
+msgstr "stigende"
+
+msgid "descending"
+msgstr "faldende"
+
+msgid "Events for this user"
+msgstr "Begivenheder for denne bruger"
+
+msgid "No events found for this user"
+msgstr "Ingen begivenheder fundet for denne bruger"
+
+msgid "No events found"
+msgstr "Ingen begivenheder fundet"
+
+msgid "My upcoming events block"
+msgstr "Mine kommende begivenheder"
+
+msgid "My upcoming events"
+msgstr "Kommende begivenheder"
+
+msgid "Follow content"
+msgstr "Følg"
+
+msgid "Unfollow content"
+msgstr "Følg ikke"
+
+msgid "Content I follow"
+msgstr "Indhold jeg følger"
+
+msgid "see profile"
+msgstr "Se profil"
+
+msgid "No likes yet"
+msgstr "Ingen reaktioner endnu"
+
+msgid "Post comment"
+msgstr "Skriv kommentar"
+
+msgid "Visible to all visitors of the site"
+msgstr "Synlig for alle besøgene på siden"
+
+msgid "<h4>All results</h4>"
+msgstr "<h4>Alle resultater</h4>"
+
+msgid "(ascending)"
+msgstr "(stigende)"
+
+msgid "(descending)"
+msgstr "(faldende)"
+
+msgid "<h4>Content results</h4>"
+msgstr "<h4>Søgeresultater</h4>"
+
+msgid "<h4>Group results</h4>"
+msgstr "<h4>Resultater efter søgning i grupper</h4>"
+
+msgid "is the type of"
+msgstr "af typen"
+
+msgid "Sort by publish date"
+msgstr "Sorter efter udgivelses dato"
+
+msgid "has the publish status of"
+msgstr "udgivelses status"
+
+msgid "No topics found for this user"
+msgstr "Ingen mener fundet for denne bruger"
+
+msgid "Group Image"
+msgstr "Gruppe billede"
+
+msgid "Closed group: Group membership"
+msgstr "Lukket gruppe: gruppe medlemsskab"
+
+msgid "Open group: Group membership"
+msgstr "Åben gruppe: gruppe medlemskab"
+
+msgid "Public group: Group membership"
+msgstr "Offentlig gruppe: gruppe medlemskab"
+
+msgid "Closed group"
+msgstr "Lukket gruppe"
+
+msgid ""
+"This is a closed group. Users can only join by invitation and the "
+"content in the group is hidden from non members."
+msgstr ""
+"Dette er en lukket gruppe. Brugere kan kun tilføjes med invitation og "
+"alt indhold oprettet i denne gruppe er kun synligt for alle "
+"gruppemedlemmer."
+
+msgid "Open group"
+msgstr "Åben gruppe"
+
+msgid ""
+"This is an open group. Users may join without approval and all content "
+"added in this group will be visible to all community members."
+msgstr ""
+"Dette er en åben gruppe. Brugere må tilføjes uden godkendelse og "
+"alt indhold oprettet i denne gruppe er synligt for alle "
+"gruppemedlemmer."
+
+msgid "Public group"
+msgstr "Offentlig gruppe"
+
+msgid ""
+"This is a public group. Users may join without approval and all "
+"content added in this group will be visible to all community members "
+"and anonymous users."
+msgstr ""
+"Dette er en offentlig gruppe. Brugere må tilføjes uden godkendelse "
+"og alt indhold oprettet i denne gruppe er synligt for alle "
+"gruppemedlemmer og anonyme brugere."
+
+msgid "Joined date"
+msgstr "Tilmeldt siden"
+
+msgid "No groups found for this user"
+msgstr "Ingen grupper fundet for denne bruger"
+
+msgid "Recently joined groups"
+msgstr "Senest tilføjede grupper"
+
+msgid "Newest groups"
+msgstr "Nyeste groups"
+
+msgid "Secret group: Group membership"
+msgstr "Hemmelig gruppe: Gruppe medlemskab"
+
+msgid "Secret group"
+msgstr "Hemmelig gruppe"
+
+msgid ""
+"This is a secret group. Users can only join by invitation and the "
+"group itself and its content are hidden from non members."
+msgstr ""
+"Dette er en hemmelig gruppe. Brugere skal inviteres og gruppen selv og "
+"dens indhold er skjult for ikke-medlemmer."
+
+msgid "Join directly"
+msgstr "Tilmeld direkte"
+
+msgid "Flexible group: Group membership"
+msgstr "Fleksibel gruppe: Gruppe medlemskab"
+
+msgid "Flexible group"
+msgstr "Fleksibel gruppe"
+
+msgid "Message settings."
+msgstr "Besked indstillinger."
+
+msgid "Message settings"
+msgstr "Besked indstillinger"
+
+msgid "All @label"
+msgstr "Alle @label"
+
+msgctxt "Post button"
+msgid "Post"
+msgstr "Send"
+
+msgctxt "Comment Button"
+msgid "Comment"
+msgstr "Send"
+
+msgid "Members who liked this @content"
+msgstr "Medlemmer der synes om dette"
+
+msgid "New Content"
+msgstr "Ny indhold"
+
+msgid "Create New Content"
+msgstr "Opret nyt indhold"
+
+msgid "Create New Book Page"
+msgstr "Opret ny side"
+
+msgid "Create New Event"
+msgstr "Opret nyt event"
+
+msgid "New Event"
+msgstr "Nyt event"
+
+msgid "Create New Page"
+msgstr "Opret ny side"
+
+msgid "New Group"
+msgstr "Ny gruppe"
+
+msgid "My Groups"
+msgstr "Mine grupper"
+
+msgid "Notification Centre"
+msgstr "Notifikationer"
+
+msgid "Profile of @account"
+msgstr "@account"
+
+msgid "Signed in as"
+msgstr "Logget ind som"
+
+msgid "My events"
+msgstr "Mine begivenheder"
+
+msgid "My topics"
+msgstr "Mine dokumenter"
+
+msgid "in the group"
+msgstr "i gruppen"
+
+msgid "Say something to the group"
+msgstr "Skriv noget til gruppen"
+
+msgid "View community Posts"
+msgstr "Se fælles beskeder"
+
+msgid "like"
+msgid_plural "likes"
+msgstr[0] "synes om"
+msgstr[1] "synes om"
+
+msgid "Have an account already? @link"
+msgstr "Har du allerede en konto? @link"
+
+msgid "Sign up with <b>email</b>"
+msgstr "Tilmeld med <b>email</b>"
+
+msgid "Message to me"
+msgstr "Besked til mig"
+
+msgctxt "Address label"
+msgid "Street address"
+msgstr "Adresse"
+
+msgctxt "Address label"
+msgid "Postal code"
+msgstr "Postnummer"
+
+msgctxt "Address label"
+msgid "City"
+msgstr "By"
+
+msgid "Reset crop"
+msgstr "Nulstil beskæring"
+
+msgid "Crop image"
+msgstr "Beskær billedet"
+
+msgid "Profile of @name"
+msgstr "@name"
+
+msgid "Emner"
+msgstr "Dokumenter"
+
+msgid "for this user"
+msgstr "bruger"
+
+msgid ""
+"By submitting this form you will become a member of the group. Please "
+"fill out any available fields to complete your membership information."
+msgstr "Ved at indsende denne formular bliver du medlem af gruppen."
+
+msgid "Join group %label"
+msgstr "Tilmeldt gruppen %label"
+
+msgctxt "Is a member"
+msgid "Joined"
+msgstr "Tilmeldt"
+
+msgid "View activities"
+msgstr "Se aktivitet"
+
+msgid "Crop image (cropping applied)"
+msgstr "Beskær billede (beskæring anvendt)"
+
+msgid "Cropping applied."
+msgstr "Beskæring anvendt"
+
+msgid ""
+"You are not allowed to comment on content in a group you are not "
+"member of. You can join the group @group_link."
+msgstr ""
+"Det er ikke tilladt at kommentere på indhold i n gruppe du ikke er "
+"medlem af. Du kan tilmelde dig gruppen @group_link."
+
+msgid "@amount like(s)"
+msgstr "@amount synes om"
+
+msgid "Reset password with <b>username</b> or <b>email</b>"
+msgstr "Nulstil password med <b>username</b> eller <b>email</b>"
+
+msgid "Private Message Inbox"
+msgstr "Indbakke til private beskeder"
+
+msgid "Private Message Notification"
+msgstr "Notifikation om privat besked"
+
+msgid ""
+"You do not have any private messages yet. Click on the button on the "
+"right to start a new message."
+msgstr ""
+"Du har ikke nogle private beskeder endnu. Klik på knappen til højre "
+"for at skrive en ny besked."
+
+msgid "New message"
+msgstr "Ny besked"
+
+msgid "Member(s)"
+msgstr "Til"
+
+msgid ""
+"The member(s) of the private message thread. Add multiple members by "
+"seperating them with a comma."
+msgstr ""
+"Modtagere af den private besked. Tilføj flere modtagere ved at "
+"adskille dem med komma."
+
+msgid "Create Private Message"
+msgstr "Opret privat besked"
+
+msgid "Delete thread"
+msgstr "Slet tråd"
+
+msgid "Deleting the group and all the content within the group..."
+msgstr "Slette gruppen og alt indhold i gruppen."
+
+msgid "Delete Thread"
+msgstr "Slet tråd"
+
+msgid ""
+"A welcome message with further instructions will be sent to your email "
+"address after you successfully enter your email address and a "
+"username."
+msgstr ""
+"En velkomstbesked med flere instruktioner bliver sendt til din email "
+"addresse når du succesfuldt har oprettet en bruger."
+

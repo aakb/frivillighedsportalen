@@ -1,0 +1,10 @@
+uuid: 8098f1a8-d5bd-43e5-adeb-f62a80fec48f
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.registration
+label: Registration
+targetEntityType: profile
+cache: true

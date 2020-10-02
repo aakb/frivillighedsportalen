@@ -1,0 +1,14 @@
+uuid: 448d539e-2e36-4b89-bb51-5e51d56c675c
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.frivillig_manager
+  module:
+    - user
+id: user_remove_role_action.frivillig_manager
+label: 'Remove the Frivillig manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: frivillig_manager

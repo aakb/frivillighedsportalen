@@ -1,4 +1,3 @@
-uuid: 2ac1914c-1c93-4c1e-8251-814ffa59cb88
 langcode: da
 status: true
 dependencies:
@@ -15,8 +14,6 @@ dependencies:
     - image
     - options
     - user
-_core:
-  default_config_hash: f8CwTUE67JUoVcGtEGUtMW6gqMm2YPyQZAOIZhBeCrw
 id: node.book.teaser
 targetEntityType: node
 bundle: book
@@ -25,53 +22,21 @@ content:
   field_book_image:
     type: image
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: social_x_large
       image_link: content
     third_party_settings: {  }
-    region: content
   field_content_visibility:
     type: list_default
     weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: content
-  flag_follow_content:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  groups_type_flexible_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  groups_type_secret_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   links:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   body: true
   field_book_comments: true
@@ -79,6 +44,3 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
-  langcode: true
-  search_api_excerpt: true
-  shariff_field: true

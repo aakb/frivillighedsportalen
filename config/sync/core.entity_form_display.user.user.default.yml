@@ -2,6 +2,12 @@ uuid: 1eb88fd3-faf3-4300-9d55-b5766c1d1600
 langcode: da
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
     - field_group
     - user
@@ -19,6 +25,7 @@ third_party_settings:
         required_fields: true
         id: ''
         classes: ''
+      region: content
     group_locale_settings:
       children:
         - timezone
@@ -31,8 +38,9 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Locale settings'
+      region: content
 _core:
-  default_config_hash: pRQ6ymdA2LS1Ssy6jQIpcFyAkOgrFCOfnW5S1j_knPE
+  default_config_hash: 0nZ2z-1drifgtazQ7sCHMq5tzD4JvQ5oYqoHa0z3koI
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -43,6 +51,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  private_messages:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   timezone:
     weight: 0
     region: content
@@ -50,6 +63,11 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
+  field_consent: true
+  field_firstname: true
+  field_frivillig: true
+  field_lastname: true
+  field_phone: true
   groups: true
   langcode: true
   language: true

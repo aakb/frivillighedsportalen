@@ -1,0 +1,10 @@
+uuid: a9ac6944-6663-4e7d-9a5b-240b76484f08
+langcode: da
+status: true
+dependencies:
+  module:
+    - group
+id: group_content.martintest
+label: martintest
+targetEntityType: group_content
+cache: true

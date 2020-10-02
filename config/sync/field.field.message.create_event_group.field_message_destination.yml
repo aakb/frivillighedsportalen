@@ -8,12 +8,12 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: HPbxsTGiymAdPmjNJ3IUNGB11U0f782BvjnBaszs9_c
+  default_config_hash: LDAnIjI3lZnHTSoajFWoqDa-_pHHuOYC7AgUDqgM6Tc
 id: message.create_event_group.field_message_destination
 field_name: field_message_destination
 entity_type: message
 bundle: create_event_group
-label: Destinationer
+label: Destinations
 description: ''
 required: false
 translatable: false

@@ -8,12 +8,12 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: U8I1NkTJdcp2XhHbBStFMbuSw94jfetwCVz_GnKEZQQ
+  default_config_hash: qzstvdhQFyliKu4a4N_tlYXuPf5d-dhOyZ7WNje5bUM
 id: node.page.field_page_image
 field_name: field_page_image
 entity_type: node
 bundle: page
-label: Billede
+label: Image
 description: 'Crop your image to select which part of your image to show on display.'
 required: false
 translatable: true

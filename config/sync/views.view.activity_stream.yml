@@ -10,7 +10,7 @@ dependencies:
     - options
     - social_post
 _core:
-  default_config_hash: taJtVLpGOqefYYGQiaA9LUHwIATJB8SmDG6ACxrNGiw
+  default_config_hash: _JmlmKiydMMSHiHwKxrIgz1TclzTRi13Gz2Px8Upqv0
 id: activity_stream
 label: 'Activity Stream'
 module: views
@@ -18,7 +18,6 @@ description: ''
 tag: ''
 base_table: activity_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -43,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Udfør
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: mini
         options:
@@ -62,12 +61,12 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
       style:
         type: default
       row:
@@ -151,6 +150,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -188,6 +189,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -285,6 +288,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -322,6 +327,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -343,6 +350,7 @@ display:
         operator: AND
         groups:
           1: AND
+      block_description: 'Activity stream'
     cache_metadata:
       max-age: -1
       contexts:
@@ -387,6 +395,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -424,6 +434,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -447,6 +459,7 @@ display:
         groups:
           1: AND
       header: {  }
+      block_description: 'Activity stream - Without Post block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -460,7 +473,7 @@ display:
   page_activity_stream:
     display_plugin: page
     id: page_activity_stream
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
@@ -535,6 +548,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -572,6 +587,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

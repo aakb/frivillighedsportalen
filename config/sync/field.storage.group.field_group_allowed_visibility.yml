@@ -6,7 +6,7 @@ dependencies:
     - group
     - options
 _core:
-  default_config_hash: rcofQoJONrsuzsXK450Frwl_cTiJTlSXux9JDA6UMPM
+  default_config_hash: PwuflHp3177kMRzGb9zq5EYjka8TUeU0k0ZAKhLV9pc
 id: group.field_group_allowed_visibility
 field_name: field_group_allowed_visibility
 entity_type: group
@@ -15,13 +15,13 @@ settings:
   allowed_values:
     -
       value: public
-      label: Offentlig
+      label: Public
     -
       value: community
       label: Community
     -
       value: group
-      label: Gruppemedlemmer
+      label: 'Group members'
   allowed_values_function: ''
 module: options
 locked: false

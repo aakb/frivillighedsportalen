@@ -6,12 +6,12 @@ dependencies:
     - field.storage.group.field_group_location
     - group.type.flexible_group
 _core:
-  default_config_hash: '-0F6somXycYJAQyqlu-gEsgdhEAJSj9ryxRlfF7dX6Y'
+  default_config_hash: 1bhf_BnKdiprJStrU3mCx5kSbTEyfOcFmq_7jL0c12w
 id: group.flexible_group.field_group_location
 field_name: field_group_location
 entity_type: group
 bundle: flexible_group
-label: 'Navn på lokalitet'
+label: 'Location name'
 description: ''
 required: false
 translatable: false

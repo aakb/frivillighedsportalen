@@ -1,0 +1,27 @@
+uuid: 7b252f5e-a8b2-4b4a-b4c8-a07fda7a7077
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.dokument
+  module:
+    - file
+id: media.dokument.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: dokument
+label: Fil
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'txt doc docx pdf'
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

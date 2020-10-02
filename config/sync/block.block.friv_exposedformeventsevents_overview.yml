@@ -1,0 +1,37 @@
+uuid: b9df4dcf-c89b-498a-94b7-ae28e29917ee
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - friv
+id: friv_exposedformeventsevents_overview
+theme: friv
+region: complementary_top
+weight: -15
+provider: null
+plugin: 'views_exposed_filter_block:events-events_overview'
+settings:
+  id: 'views_exposed_filter_block:events-events_overview'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '/user/*/events'
+    negate: false
+    context_mapping: {  }

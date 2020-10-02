@@ -20,6 +20,7 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+
 // As the settings.php file is not writable during install, Drupal will refuse to install a profile that is not defined
 // here.
 $settings['install_profile'] = 'social';
@@ -28,6 +29,7 @@ $settings['entity_update_backup'] = TRUE;
 
 // Configuration sync path.
 $config_directories['sync'] = '../config/sync';
+$settings['custom_translations_directory'] = '../translations';
 
 // Local settings. These come last so that they can override anything.
 if (file_exists(__DIR__ . '/settings.local.php')) {

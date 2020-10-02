@@ -1,0 +1,26 @@
+uuid: df2c55f9-9e23-4458-ac8d-ba4edcc2f229
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_event
+    - system
+  theme:
+    - friv
+id: friv_event_add_block
+theme: friv
+region: complementary_top
+weight: -29
+provider: null
+plugin: event_add_block
+settings:
+  id: event_add_block
+  label: 'Event add block'
+  provider: social_event
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/events'
+    negate: false
+    context_mapping: {  }

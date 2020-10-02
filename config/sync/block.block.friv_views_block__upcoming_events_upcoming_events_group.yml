@@ -1,0 +1,43 @@
+uuid: 18a9d216-21d4-4671-99de-4413d811c127
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - friv
+id: friv_views_block__upcoming_events_upcoming_events_group
+theme: friv
+region: complementary_bottom
+weight: -26
+provider: null
+plugin: 'views_block:upcoming_events-upcoming_events_group'
+settings:
+  id: 'views_block:upcoming_events-upcoming_events_group'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/group/*/stream\r\n/group/*/about"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+    negate: false
+    context_mapping:
+      user: '@social_user.user_route_context:user'

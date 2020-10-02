@@ -1,0 +1,12 @@
+uuid: ec157c50-f18f-4b1e-b0e4-414d1d7f8ee1
+langcode: da
+status: true
+dependencies:
+  module:
+    - private_message
+_core:
+  default_config_hash: ZfiDSEdeDse0qMWBsb0u9YVhJ05_ySCpkBuBi_DlFd0
+id: private_message.inbox
+label: Indbakke
+targetEntityType: private_message
+cache: true

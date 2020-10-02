@@ -1,0 +1,36 @@
+uuid: 12cb8adc-d648-4937-a211-f7b1d3333d61
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - friv
+id: friv_local_tasks
+theme: friv
+region: secondary_navigation
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/group/*/edit\r\n"
+    negate: true
+    context_mapping: {  }

@@ -2,10 +2,16 @@ uuid: aa5c8e1a-4963-4581-85ca-a668214eee02
 langcode: da
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
     - user
 _core:
-  default_config_hash: m2KUyVd52WOjOKfANphGWnvnM6AzChT6cogYWkk_efo
+  default_config_hash: c23cLvgm2S6S2e0bZFAhEzEx9xDdsEycGOiAUCZhJ9E
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -28,12 +34,19 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
 hidden:
+  field_consent: true
+  field_firstname: true
+  field_frivillig: true
+  field_lastname: true
+  field_phone: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  linked_username: true
   member_for: true
+  private_message_link: true
   profile_main: true
   profile_profile: true
   profile_profiles: true

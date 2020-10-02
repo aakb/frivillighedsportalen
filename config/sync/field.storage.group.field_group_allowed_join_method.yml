@@ -6,7 +6,7 @@ dependencies:
     - group
     - options
 _core:
-  default_config_hash: X4MpjmJmGgzw_778qhXMP0hSUVb-ppthC_cj_Na4hak
+  default_config_hash: zlheZiP1i6ZGivVV3w213yhEX2Mg3YFh-QkCD23D958
 id: group.field_group_allowed_join_method
 field_name: field_group_allowed_join_method
 entity_type: group

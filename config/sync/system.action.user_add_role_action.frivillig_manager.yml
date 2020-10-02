@@ -1,0 +1,14 @@
+uuid: c1b872df-fc0a-41ff-8354-db6a914c92b1
+langcode: da
+status: true
+dependencies:
+  config:
+    - user.role.frivillig_manager
+  module:
+    - user
+id: user_add_role_action.frivillig_manager
+label: 'Add the Frivillig manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: frivillig_manager

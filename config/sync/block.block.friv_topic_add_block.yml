@@ -1,0 +1,26 @@
+uuid: d040c115-2d75-4759-b1a5-2e4142086842
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_topic
+    - system
+  theme:
+    - friv
+id: friv_topic_add_block
+theme: friv
+region: complementary_top
+weight: -28
+provider: null
+plugin: topic_add_block
+settings:
+  id: topic_add_block
+  label: 'Topic add block'
+  provider: social_topic
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/*/topics\r\n/dokumenter\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: 11704f62-ddd6-4af0-9b7a-a21b34f48cdc
+langcode: da
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_frivillig
+field_name: field_frivillig
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

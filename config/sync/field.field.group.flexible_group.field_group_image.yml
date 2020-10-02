@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: gfSMDaodVTavNFkx65ZEBci8Na_7paWsq24tyjS72lg
+  default_config_hash: 6YIk-lei6xu16-FnLFGfn9O9u3US3AYXxgIFhfnl0TM
 id: group.flexible_group.field_group_image
 field_name: field_group_image
 entity_type: group

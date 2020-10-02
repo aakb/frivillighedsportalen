@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: OFLEanEBYiOHBrqlH_muTDb5oInfY2Z-xi10J9vCVIk
+  default_config_hash: IlH8UNz2XWbEUBjUx3UUboPNwHIWNchfaGR1do98SA8
 id: open_group-outsider
 label: Outsider
 weight: -101

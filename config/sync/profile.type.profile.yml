@@ -3,9 +3,9 @@ langcode: da
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: XknqMjXmay6Ivp8iiMAhawIM4idlyWLmoGLuNZtPyBA
+  default_config_hash: NvHTnZn-Y85aABkQEsCNty0XMRlwGDluZy3-KdImiiQ
 id: profile
-label: Profil
+label: Profile
 display_label: null
 multiple: false
 registration: false

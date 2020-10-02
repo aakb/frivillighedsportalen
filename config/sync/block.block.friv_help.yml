@@ -1,0 +1,20 @@
+uuid: e94c56ae-96d5-4641-8aa1-53375fa37199
+langcode: da
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - friv
+id: friv_help
+theme: friv
+region: content
+weight: -16
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

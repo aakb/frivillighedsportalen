@@ -1,0 +1,29 @@
+uuid: bbedfa41-53fb-48a9-bd54-96f640405817
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.search_users
+  module:
+    - system
+    - views
+  theme:
+    - friv
+id: friv_exposed_form_search_users_page_sidebar
+theme: friv
+region: complementary_top
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:search_users-page'
+settings:
+  id: 'views_exposed_filter_block:search_users-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search/users\r\n/search/users/*"
+    negate: false
+    context_mapping: {  }

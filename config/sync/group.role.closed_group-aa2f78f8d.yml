@@ -1,0 +1,17 @@
+uuid: 6e7e3ac9-e6c5-40c7-9122-123cfe64a2c5
+langcode: da
+status: true
+dependencies:
+  config:
+    - group.type.closed_group
+  enforced:
+    config:
+      - user.role.frivillig_manager
+id: closed_group-aa2f78f8d
+label: 'Frivillig manager'
+weight: 6
+internal: true
+audience: outsider
+group_type: closed_group
+permissions_ui: false
+permissions: {  }

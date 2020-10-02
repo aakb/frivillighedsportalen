@@ -7,15 +7,17 @@ dependencies:
     - field.storage.group_content.group_roles
     - field.storage.profile.field_profile_organization
     - group.content_type.closed_group-group_membership
+    - group.content_type.flexible_group-group_membership
     - group.content_type.open_group-group_membership
     - group.content_type.public_group-group_membership
+    - group.content_type.secret_group-group_membership
   module:
     - group
     - profile
     - social_group
     - user
 _core:
-  default_config_hash: XMkAOCeioLxvZ_MJvF7EhWEcAKSZP07d7Z4Nx-BeutI
+  default_config_hash: GDpJ5bx9nGGYG25jH2WHORrRapda7bbMxIpFZOPZ1jk
 id: group_manage_members
 label: 'Group Manage Members'
 module: views
@@ -23,7 +25,6 @@ description: ''
 tag: ''
 base_table: group_content_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -48,13 +49,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Udfør
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -63,18 +64,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Forrige'
-            next: 'Næste ›'
-            first: '« Første'
-            last: 'Sidste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Antal elementer'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskydning
+            offset_label: Offset
           quantity: 9
       style:
         type: table
@@ -155,7 +156,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Medlem
+          label: Member
           exclude: false
           alter:
             alter_text: false
@@ -206,7 +207,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
-          label: Organisation
+          label: Organization
           exclude: false
           alter:
             alter_text: false
@@ -269,7 +270,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Rolle
+          label: Role
           exclude: false
           alter:
             alter_text: false
@@ -399,7 +400,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Handling
+          label: Operation
           exclude: false
           alter:
             alter_text: false
@@ -456,6 +457,8 @@ display:
             closed_group-group_membership: closed_group-group_membership
             open_group-group_membership: open_group-group_membership
             public_group-group_membership: public_group-group_membership
+            flexible_group-group_membership: flexible_group-group_membership
+            secret_group-group_membership: secret_group-group_membership
           group: 1
           exposed: false
           expose:
@@ -471,6 +474,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -564,7 +569,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: true
           title: 'Members of {{ arguments.gid }}'
           default_argument_type: group_id_from_url
@@ -615,7 +620,7 @@ display:
   page_group_manage_members:
     display_plugin: page
     id: page_group_manage_members
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
