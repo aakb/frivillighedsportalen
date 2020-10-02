@@ -23,6 +23,7 @@
         "drupal/migrate_tools": "^4.5",
         "drupal/migrate_source_csv": "^3.2",
         "drupal/twig_domquery": "^1.0@beta",
+        "itk-dev/web_accessibility_statement": "dev-master",
         "drupal/field_group": "^3.0"
     },
     "repositories": [
