@@ -1,12 +1,9 @@
-uuid: c0d6e019-6823-451d-b39f-4c8dba39f8d4
 langcode: da
 status: true
 dependencies:
   module:
     - private_message
     - social_private_message
-_core:
-  default_config_hash: bqomTr448IBsA99kBl9BdDGnlEFeaNkWMN0ADw9U7-c
 id: private_message_thread.private_message_thread.default
 targetEntityType: private_message_thread
 bundle: private_message_thread
@@ -37,11 +34,10 @@ content:
     region: content
     label: hidden
     settings:
-      message_count: 7
+      message_count: 30
       ajax_previous_load_count: 5
       ajax_refresh_rate: 120
       message_order: asc
     third_party_settings: {  }
 hidden:
   last_message: true
-  search_api_excerpt: true

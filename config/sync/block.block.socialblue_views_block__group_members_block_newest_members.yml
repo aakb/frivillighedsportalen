@@ -9,10 +9,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: pDGqBKQ5EIcThRbOxWSoJcqlOh6wDrJaK-_o61A283I
 id: socialblue_views_block__group_members_block_newest_members
 theme: socialblue
 region: complementary_bottom
-weight: -18
+weight: 5
 provider: null
 plugin: 'views_block:group_members-block_newest_members'
 settings:
@@ -22,10 +24,10 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
+  type: none
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/stream\r\n/group/*/about\r\n/dokumenter"
+    pages: "/group/*/stream\r\n/group/*/about"
     negate: false
     context_mapping: {  }

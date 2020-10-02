@@ -1,0 +1,21 @@
+uuid: 27945709-d7d9-445f-be68-73e44db30839
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_lokalcenter
+field_name: field_lokalcenter
+entity_type: profile
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

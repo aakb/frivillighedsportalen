@@ -9,10 +9,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: QRo3tGvHr084jZ0ZUS31X0Z9_VJcHRdtVG0B6IxLllQ
 id: socialblue_exposed_form_search_content_page_sidebar
 theme: socialblue
 region: complementary_top
-weight: -13
+weight: 3
 provider: null
 plugin: 'views_exposed_filter_block:search_content-page'
 settings:

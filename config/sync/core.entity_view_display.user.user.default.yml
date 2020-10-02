@@ -9,56 +9,14 @@ dependencies:
     - field.field.user.user.field_lastname
     - field.field.user.user.field_phone
   module:
-    - text
     - user
 _core:
-  default_config_hash: m2KUyVd52WOjOKfANphGWnvnM6AzChT6cogYWkk_efo
+  default_config_hash: c23cLvgm2S6S2e0bZFAhEzEx9xDdsEycGOiAUCZhJ9E
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_consent:
-    weight: -3
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_firstname:
-    weight: -1
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_frivillig:
-    weight: -4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_lastname:
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_phone:
-    weight: 1
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   groups_type_flexible_group:
     label: above
     weight: -5
@@ -76,6 +34,11 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
 hidden:
+  field_consent: true
+  field_firstname: true
+  field_frivillig: true
+  field_lastname: true
+  field_phone: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

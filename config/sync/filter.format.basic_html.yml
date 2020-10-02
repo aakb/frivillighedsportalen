@@ -6,7 +6,7 @@ dependencies:
     - editor
 _core:
   default_config_hash: SQ4OQMLT5Ik1QbaFZ4BIzZHXUCwSEMO3PCznCaBH_jU
-name: 'Simpel HTML'
+name: 'Basic HTML'
 format: basic_html
 weight: 0
 filters:

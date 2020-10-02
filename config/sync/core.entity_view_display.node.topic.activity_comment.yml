@@ -16,7 +16,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: 4AnPBOFQOdlyi6zQcSuNt7j2_IqZQO3V9I5JRFaH94M
+  default_config_hash: aJNTou3jlGcYFwktrM0NmG5Uq9rJVmwZUHsvhRe8JPc
 id: node.topic.activity_comment
 targetEntityType: node
 bundle: topic
@@ -74,5 +74,6 @@ hidden:
   groups_type_public_group: true
   langcode: true
   like_and_dislike: true
+  private_message_link: true
   search_api_excerpt: true
   shariff_field: true
