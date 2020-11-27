@@ -3,14 +3,14 @@ langcode: da
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: XknqMjXmay6Ivp8iiMAhawIM4idlyWLmoGLuNZtPyBA
+  default_config_hash: NvHTnZn-Y85aABkQEsCNty0XMRlwGDluZy3-KdImiiQ
 id: profile
-label: Profil
-display_label: ''
+label: Profile
+display_label: null
 multiple: false
-registration: true
+registration: false
 roles:
-  frivillig: frivillig
-  frivillig_manager: frivillig_manager
+  authenticated: '0'
+  administrator: '0'
 allow_revisions: false
 new_revision: false

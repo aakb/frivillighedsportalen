@@ -7,10 +7,12 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: eiC2CIa5Q7scScFEdXiTwbct8QT61s-7T-Uk8j0HYo4
 id: socialblue_topic_add_block
 theme: socialblue
 region: complementary_top
-weight: -28
+weight: -98
 provider: null
 plugin: topic_add_block
 settings:
@@ -21,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*/topics\r\n"
+    pages: '/user/*/topics'
     negate: false
     context_mapping: {  }

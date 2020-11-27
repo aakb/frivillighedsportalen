@@ -10,7 +10,7 @@ dependencies:
 id: friv_search_block_hero
 theme: friv
 region: hero
-weight: -28
+weight: -29
 provider: null
 plugin: search_hero_block
 settings:

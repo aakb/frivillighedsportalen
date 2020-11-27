@@ -16,7 +16,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: MTYg82XqRSWv3lA-f728vfIER4AS9xS1Jkvyh1aClck
+  default_config_hash: 9uUwUhpr0--ivYafrk3VVaqHTSmpgBIL908V666YHF8
 id: group.flexible_group.hero
 targetEntityType: group
 bundle: flexible_group

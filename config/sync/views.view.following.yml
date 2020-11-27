@@ -15,15 +15,14 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: 2UFxRhD62-Y1YVrzHK9eECIsh1QAWh_JmdzIi3fv030
+  default_config_hash: KHHhcoftIVQLDT3IFYft6tr8nrGirtmRWEsBUKZm_sk
 id: following
-label: 'Indhold jeg følger'
+label: 'Content I follow'
 module: views
 description: ''
 tag: ''
 base_table: flagging
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -50,7 +49,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -127,7 +126,7 @@ display:
           relationship: flag_follow_content
           group_type: group
           admin_label: ''
-          label: Titel
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -319,7 +318,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Indholdstype
+            label: 'Content type'
             description: ''
             use_operator: false
             operator: type_op
@@ -334,6 +333,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -365,7 +366,7 @@ display:
           entity_type: flagging
           entity_field: created
           plugin_id: date
-      title: 'Indhold jeg følger'
+      title: 'Content I follow'
       header: {  }
       footer: {  }
       empty: {  }
@@ -425,7 +426,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alt
+            title: All
           title_enable: false
           title: ''
           default_argument_type: current_user

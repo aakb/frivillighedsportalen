@@ -14,7 +14,7 @@ source:
   path: 'public://Mappe1.CSV'
   header_row_count: 1
   ids:
-    - E-mail
+    - Mailadresse
 process:
   type:
     plugin: default_value
@@ -23,10 +23,18 @@ process:
     plugin: migration_lookup
     no_stub: true
     migration: user_migrate
-    source: E-mail
-  field_profile_phone_number: Tlf
+    source: Mailadresse
+  field_profile_phone_number: Telefonnummer
   field_note: Bemærkning
-  field_location: Lokation
+  field_location: Omraade
+  field_lokalcenter: Lokalcenter
+  field_grupper: Grupper
+  field_foedselsdag‎: Foedselsdag
+  field_frivilligstart‎: Start
+  field_koen: Koen
+  field_koerekort‎: Kort
+  field_profile_first_name: Fornavn
+  field_profile_last_name: Efternavn
 destination:
   plugin: 'entity:profile'
 migration_dependencies:

@@ -1,13 +1,9 @@
-uuid: b1cb9d81-31a1-4b0c-a940-d325dcd7cb59
 langcode: da
 status: true
 dependencies:
   module:
     - private_message
-    - social_private_message
     - text
-_core:
-  default_config_hash: SlmNpnxfsmhs7bIGIDGODcMR1vFb7yyYAs-imNpMKKQ
 id: private_message.private_message.default
 targetEntityType: private_message
 bundle: private_message
@@ -43,5 +39,4 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  search_api_excerpt: true
+hidden: {  }

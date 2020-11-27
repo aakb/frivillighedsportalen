@@ -8,12 +8,12 @@ dependencies:
   module:
     - address
 _core:
-  default_config_hash: TWRQla6NWdRXUYxeS-XOCspe2UcrbQgQUq8NXPqS4Ac
+  default_config_hash: 1D0_jS0jX5TItKp9k3Oko8IqzSfXZMBN7V55gl_CDBw
 id: group.flexible_group.field_group_address
 field_name: field_group_address
 entity_type: group
 bundle: flexible_group
-label: Adresse
+label: Address
 description: ''
 required: false
 translatable: false

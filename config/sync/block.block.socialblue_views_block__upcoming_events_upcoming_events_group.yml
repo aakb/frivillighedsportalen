@@ -6,14 +6,15 @@ dependencies:
     - views.view.upcoming_events
   module:
     - system
-    - user
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: 5ebCasYMYINKifGY18veNANcc2T3_6ouAiB6kUvojco
 id: socialblue_views_block__upcoming_events_upcoming_events_group
 theme: socialblue
 region: complementary_bottom
-weight: -24
+weight: 2
 provider: null
 plugin: 'views_block:upcoming_events-upcoming_events_group'
 settings:
@@ -23,21 +24,10 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
+  type: none
 visibility:
   request_path:
     id: request_path
     pages: "/group/*/stream\r\n/group/*/about"
     negate: false
     context_mapping: {  }
-  user_role:
-    id: user_role
-    roles:
-      anonymous: anonymous
-      authenticated: authenticated
-      administrator: administrator
-      contentmanager: contentmanager
-      sitemanager: sitemanager
-    negate: false
-    context_mapping:
-      user: '@social_user.user_route_context:user'

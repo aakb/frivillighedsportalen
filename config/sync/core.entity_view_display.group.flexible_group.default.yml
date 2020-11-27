@@ -13,7 +13,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: EsUA6_KIKnFzDKnw4ta9Ca3D41YhSNqTY1ZH_U3HRi4
+  default_config_hash: 3GEvnGXGQcLDg7h4zSY0Oj3e0aAVBB7TbzsZZiGqlUk
 id: group.flexible_group.default
 targetEntityType: group
 bundle: flexible_group

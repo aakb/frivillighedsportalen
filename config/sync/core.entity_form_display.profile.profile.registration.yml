@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.profile.registration
+    - field.field.profile.profile.field_foedselsdag
+    - field.field.profile.profile.field_frivilligstart
+    - field.field.profile.profile.field_grupper
+    - field.field.profile.profile.field_koen
+    - field.field.profile.profile.field_koerekort
+    - field.field.profile.profile.field_location
+    - field.field.profile.profile.field_lokalcenter
     - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_expertise
@@ -40,7 +47,6 @@ third_party_settings:
       label: 'Names and profile image'
       format_type: fieldset
       format_settings:
-        label: 'Names and profile image'
         required_fields: true
         id: name
         classes: scrollspy
@@ -49,13 +55,19 @@ third_party_settings:
       children:
         - field_profile_function
         - field_profile_organization
+        - field_foedselsdag
+        - field_frivilligstart
+        - field_grupper
+        - field_koen
+        - field_koerekort
+        - field_location
+        - field_lokalcenter
         - field_type
       parent_name: ''
       weight: 1
       label: 'Function and organization'
       format_type: fieldset
       format_settings:
-        label: 'Function and organization'
         required_fields: true
         id: work
         classes: scollspy
@@ -71,7 +83,6 @@ third_party_settings:
       label: 'Self introduction, expertise and interests'
       format_type: fieldset
       format_settings:
-        label: 'Self introduction, expertise and interests'
         required_fields: true
         id: details
         classes: scrollspy
@@ -87,7 +98,6 @@ third_party_settings:
       label: 'Phone number and location'
       format_type: fieldset
       format_settings:
-        label: 'Phone number and location'
         required_fields: true
         id: contact
         classes: scollspy
@@ -99,6 +109,62 @@ targetEntityType: profile
 bundle: profile
 mode: registration
 content:
+  field_foedselsdag:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_frivilligstart:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_grupper:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_koen:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_koerekort:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_location:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_lokalcenter:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_profile_address:
     weight: 7
     settings: {  }
@@ -126,6 +192,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
     region: content
@@ -169,6 +236,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
     region: content
@@ -219,10 +287,11 @@ content:
     region: content
   field_profile_show_email:
     type: boolean_checkbox
-    weight: 2
+    weight: 3
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
 hidden:
   field_type: true
+  is_default: true

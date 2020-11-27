@@ -14,12 +14,27 @@ source:
   path: 'public://Mappe1.CSV'
   header_row_count: 1
   ids:
-    - email
+    - Mailadresse
+  constants:
+    userRole: authenticated
+    state: 1
 process:
-  mail: email
-  roles: role
-  name: name
-  status: status
+  mail: Mailadresse
+  roles: constants/userRole
+  name: Username
+  status: constants/state
+  field_phone: Telefonnummer
+  field_profile_phone_number: Telefonnummer
+  field_note: Bemærkning
+  field_location: Omraade
+  field_lokalcenter: Lokalcenter
+  field_grupper: Grupper
+  field_foedselsdag‎: Foedselsdag
+  field_frivilligstart‎: Start
+  field_koen: Koen
+  field_koerekort‎: Kort
+  field_profile_first_name: Fornavn
+  field_profile_last_name: Efternavn
 destination:
   plugin: 'entity:user'
 migration_dependencies:

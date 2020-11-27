@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.contentmanager
 _core:
-  default_config_hash: 9YE1aXEOVH9wbFfIckU-p6Tt70Ot6-U6oh2j0-ybvUc
+  default_config_hash: y0g6l3uVZlZyyiwuBIICWA3J1zhANQ0eTN2ZQ3ynsNs
 id: flexible_group-83776d798
 label: 'Content manager'
 weight: 3

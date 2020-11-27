@@ -1,0 +1,21 @@
+uuid: b29b3d8f-f737-4b65-bacb-92c9bec2ff78
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_queue_storage
+    - text
+_core:
+  default_config_hash: oST7MW34ZHZJx2H6qFJtxhXYjTxSf4g6w5zaYDzGbxQ
+id: queue_storage_entity.field_message
+field_name: field_message
+entity_type: queue_storage_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

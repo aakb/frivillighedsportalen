@@ -1,4 +1,4 @@
-uuid: 0118c3c9-712a-4a43-88ed-810ce5cf9bb8
+uuid: 11e9f9cd-8c4f-4b23-938b-7ff9cf1741d5
 langcode: da
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - views
   theme:
     - friv
-id: views_block__group_members_mail_to
+id: views_block__group_members_mail_to_n
 theme: friv
 region: hero
-weight: -23
+weight: 0
 provider: null
 plugin: 'views_block:group_members-mail_to'
 settings:
@@ -21,5 +21,6 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
+  type: none
   context_mapping: {  }
 visibility: {  }

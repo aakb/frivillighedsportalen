@@ -1,0 +1,42 @@
+uuid: c7d321bf-8adb-4ba0-aff6-0b1b5130339f
+langcode: en
+status: true
+dependencies: {  }
+id: profile_migrate
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: null
+label: 'Profile migration from CSV'
+source:
+  plugin: csv
+  path: 'public://Mappe1.CSV'
+  header_row_count: 1
+  ids:
+    - Mailadresse
+process:
+  type:
+    plugin: default_value
+    default_value: profile
+  uid:
+    plugin: migration_lookup
+    no_stub: true
+    migration: user_migrate
+    source: Mailadresse
+  field_profile_phone_number: Telefonnummer
+  field_note: Bemærkning
+  field_location: Omraade
+  field_lokalcenter: Lokalcenter
+  field_grupper: Grupper
+  field_foedselsdag‎: Foedselsdag
+  field_frivilligstart‎: Start
+  field_koen: Koen
+  field_koerekort‎: Kort
+  field_profile_first_name: Fornavn
+  field_profile_last_name: Efternavn
+destination:
+  plugin: 'entity:profile'
+migration_dependencies:
+  required: {  }
+  optional: {  }

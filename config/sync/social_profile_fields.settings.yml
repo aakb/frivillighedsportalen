@@ -1,4 +1,26 @@
-profile_profile_field_profile_nick_name: false
+profile_profile_field_profile_nick_name: 0
 _core:
   default_config_hash: axmyrroOpLTV_yaUEhzwDzk7n1ihnRnFfED0VXIrEqc
 langcode: da
+profile_profile_field_foedselsdag: 1
+profile_profile_field_frivilligstart: 1
+profile_profile_field_grupper: 1
+profile_profile_field_koen: 1
+profile_profile_field_koerekort: 1
+profile_profile_field_location: 1
+profile_profile_field_lokalcenter: 1
+profile_profile_field_profile_address: 1
+profile_profile_field_profile_banner_image: 1
+profile_profile_field_profile_expertise: 1
+profile_profile_field_profile_first_name: 1
+profile_profile_field_profile_function: 1
+profile_profile_field_profile_image: 1
+profile_profile_field_profile_interests: 1
+profile_profile_field_profile_last_name: 1
+profile_profile_field_profile_organization: 1
+profile_profile_field_profile_phone_number: 1
+profile_profile_field_profile_profile_tag: 1
+profile_profile_field_profile_self_introduction: 1
+profile_profile_field_profile_show_email: null
+profile_profile_field_type: 1
+nickname_unique_validation: 0

@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.private_message_author
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
     - user
 _core:
@@ -67,6 +71,10 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_consent: true
+  field_firstname: true
+  field_lastname: true
+  field_phone: true
   langcode: true
   member_for: true
   private_message_link: true

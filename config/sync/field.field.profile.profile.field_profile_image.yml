@@ -8,12 +8,12 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: tSyQuKXSwEWCqPytdKi5gnT04E2SCEUfF6-3AUegANk
+  default_config_hash: K9T4n5OtNsOsmxrxw9Mx4nuqQ5EnGCIsHq5b_OPpe7Y
 id: profile.profile.field_profile_image
 field_name: field_profile_image
 entity_type: profile
 bundle: profile
-label: 'Profil billede'
+label: 'Profile image'
 description: ''
 required: false
 translatable: false
@@ -31,8 +31,8 @@ settings:
   title_field_required: false
   default_image:
     uuid: 4eb1d927-28f4-402a-8c87-017e637f434a
-    alt: 'Standard profil billede'
-    title: 'Standard profil billede'
+    alt: 'Default profile image'
+    title: ''
     width: 200
     height: 200
   handler: 'default:file'

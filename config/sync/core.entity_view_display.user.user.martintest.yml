@@ -1,12 +1,11 @@
 uuid: 946aa693-5387-4dce-9250-316c2180abce
 langcode: da
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.user.martintest
     - field.field.user.user.field_consent
     - field.field.user.user.field_firstname
-    - field.field.user.user.field_frivillig
     - field.field.user.user.field_lastname
     - field.field.user.user.field_phone
   module:
@@ -36,7 +35,6 @@ content:
     region: content
 hidden:
   field_consent: true
-  field_frivillig: true
   field_phone: true
   groups: true
   groups_type_closed_group: true

@@ -1,0 +1,10 @@
+uuid: fcc23b3c-1b20-416d-b932-c882cde5fe9e
+langcode: da
+status: true
+dependencies:
+  module:
+    - activity_creator
+id: activity.featured
+label: Anbefalet
+targetEntityType: activity
+cache: true

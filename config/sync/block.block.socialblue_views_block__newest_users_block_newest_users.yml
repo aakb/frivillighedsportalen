@@ -9,10 +9,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: OxzubQJRE2Y9ihgsgasPmuMwHXR42T5ipZi8mAObDGE
 id: socialblue_views_block__newest_users_block_newest_users
 theme: socialblue
 region: complementary_bottom
-weight: -17
+weight: 5
 provider: null
 plugin: 'views_block:newest_users-block_newest_users'
 settings:
@@ -22,9 +24,10 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  type: none
 visibility:
   request_path:
     id: request_path
-    pages: "/stream\r\n/explore\r\n/forside"
+    pages: "/stream\r\n/explore"
     negate: false
     context_mapping: {  }

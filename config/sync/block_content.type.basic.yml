@@ -3,8 +3,8 @@ langcode: da
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: zglzjmYxi0G0ag9MZ02y0LSJOdpWRwJxyP_OvFojFyo
+  default_config_hash: K6pr2eG25WmDHmcbVete0kwaGA6nNJBJE4ibTwGWAmo
 id: basic
-label: 'Simpel blok'
+label: 'Basic block'
 revision: 0
-description: 'En simpel blok indeholder en titel og en brødtekst.'
+description: 'A basic block contains a title and a body.'

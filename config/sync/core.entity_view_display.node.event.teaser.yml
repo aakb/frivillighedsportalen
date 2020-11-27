@@ -24,7 +24,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: xvdrW_Y1J3gkr2lXzQqQZt8ljax50tJ6mwu06zcuTHY
+  default_config_hash: kulbHRUwdlV5kajZSFurflTfxu3Is72g6ptxNVkj3TE
 id: node.event.teaser
 targetEntityType: node
 bundle: event
@@ -122,5 +122,6 @@ hidden:
   groups_type_open_group: true
   langcode: true
   like_and_dislike: true
+  private_message_link: true
   search_api_excerpt: true
   shariff_field: true

@@ -1,0 +1,19 @@
+uuid: 0bddb02b-aed1-40b5-81e8-cb9303dcc170
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_frivilligstart
+    - profile.type.profile
+id: profile.profile.field_frivilligstart
+field_name: field_frivilligstart
+entity_type: profile
+bundle: profile
+label: 'Startet som frivillig'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -7,7 +7,7 @@ dependencies:
   module:
     - search_api
 _core:
-  default_config_hash: M4Tk3dGtX7YSFAk0rzvxZy5zc0sL_8X44RcnCdrn1SA
+  default_config_hash: oUUjUMm1qmVwbQzMg-o18IxH0dDQl45_KEV6dvnOKs0
 id: search_all
 label: 'Search All'
 module: views
@@ -15,7 +15,6 @@ description: ''
 tag: ''
 base_table: search_api_index_social_all
 base_field: search_api_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -37,7 +36,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Anvend
+          submit_button: Apply
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -73,8 +72,10 @@ display:
           view_modes:
             'entity:group':
               closed_group: teaser
+              flexible_group: teaser
               open_group: teaser
               public_group: teaser
+              secret_group: teaser
             'entity:node':
               book: teaser
               event: teaser
@@ -182,7 +183,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: Søg
+      title: Search
       header:
         area:
           id: area
@@ -194,7 +195,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4>Alle resultater</h4>'
+            value: '<h4>All results</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -209,7 +210,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Ingen resultater fundet'
+            value: 'No results found.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -225,7 +226,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alt
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
