@@ -9,15 +9,14 @@ dependencies:
     - group
     - user
 _core:
-  default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
+  default_config_hash: OL21L2xjoXlc_17Fycs9SNyTwcbxw4axjRciaZOzl9Q
 id: newest_groups
-label: 'Nyeste grupper'
+label: 'Newest groups'
 module: views
 description: ''
 tag: ''
 base_table: groups_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -160,7 +159,7 @@ display:
           entity_type: group
           entity_field: created
           plugin_id: date
-      title: 'Alle grupper'
+      title: 'All groups'
       header: {  }
       footer: {  }
       empty: {  }
@@ -182,7 +181,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Nyeste grupper'
+      title: 'Newest groups'
       defaults:
         title: false
         pager: false
@@ -208,13 +207,14 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'Alle grupper'
+      use_more_text: 'All groups'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - user.permissions
+        0: 'languages:language_content'
+        1: 'languages:language_interface'
+        2: user.permissions
+        user: user
       tags: {  }
   page_all_groups:
     display_plugin: page
@@ -239,7 +239,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Gruppetype
+            label: 'Group type'
             description: ''
             use_operator: false
             operator: type_op
@@ -254,6 +254,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

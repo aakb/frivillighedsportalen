@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.full
+    - field.field.user.user.field_consent
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_frivillig
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_phone
   module:
     - user
 _core:
-  default_config_hash: Q0XhfQDJskQ6lK21AWfMJuXpz-8thFdxA2CLj6Yg7ng
+  default_config_hash: Ge4pKcpSr84Tm7sh-Cxt-z3O2czuybuxImsU6Pci3Ro
 id: user.user.full
 targetEntityType: user
 bundle: user
@@ -30,12 +35,19 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
 hidden:
+  field_consent: true
+  field_firstname: true
+  field_frivillig: true
+  field_lastname: true
+  field_phone: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  linked_username: true
   member_for: true
+  private_message_link: true
   profile_main: true
   profile_profile: true
   profile_profiles: true

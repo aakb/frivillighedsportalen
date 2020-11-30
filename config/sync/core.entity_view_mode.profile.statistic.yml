@@ -1,0 +1,12 @@
+uuid: 14d5e1db-4b1f-4527-9058-bca4a4e15c55
+langcode: da
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: gSY7Iq34MsGC2YGJRjAG4F9yBWl2ioVsLxU1eyM83G4
+id: profile.statistic
+label: Statistic
+targetEntityType: profile
+cache: true

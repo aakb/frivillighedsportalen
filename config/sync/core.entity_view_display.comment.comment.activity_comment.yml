@@ -30,4 +30,5 @@ content:
 hidden:
   langcode: true
   like_and_dislike: true
+  private_message_link: true
   search_api_excerpt: true

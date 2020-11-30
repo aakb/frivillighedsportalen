@@ -1,0 +1,19 @@
+uuid: 284851e6-e35c-42f4-bbb4-e0aeacb07870
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_koerekort
+    - profile.type.profile
+id: profile.profile.field_koerekort
+field_name: field_koerekort
+entity_type: profile
+bundle: profile
+label: Kørekort
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

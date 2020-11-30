@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.flexible_group
 _core:
-  default_config_hash: DF37GPsKQQvB7A5eoy36cXv9bnEubuCBSrMVzTBNJh0
+  default_config_hash: qpipfNPsarLM2jE9lCRooCCMmh3JFpBTg7KO_gooCSE
 id: flexible_group-group_admin
 label: 'Group Admin'
 weight: 6

@@ -1,0 +1,19 @@
+uuid: 69192eed-45d6-46e3-a072-120b7183edac
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_koen
+    - profile.type.profile
+id: profile.profile.field_koen
+field_name: field_koen
+entity_type: profile
+bundle: profile
+label: Køn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

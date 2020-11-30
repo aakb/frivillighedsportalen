@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.group_content.teaser
     - group.content_type.open_group-group_node-event
 _core:
-  default_config_hash: A6YHuZCKCozkmu-liDqpbmzjRCbV7MH_wmRTDkVtCEc
+  default_config_hash: svghjJQ9U5TjZudtpCBmrXx0XEw6AwmUanRVtgTUs-A
 id: group_content.open_group-group_node-event.teaser
 targetEntityType: group_content
 bundle: open_group-group_node-event
