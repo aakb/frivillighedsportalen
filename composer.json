@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "require": {
         "goalgorilla/open_social": "~10.1.1",
-        "php": "^7.2",
+        "php": "^7.2.0",
         "monolog/monolog": "^1.17",
         "drush/drush": "^10.2",
         "drupal/drush_language": "^1.0@RC",
