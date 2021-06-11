@@ -1,0 +1,42 @@
+uuid: ca426be7-f10e-4f27-8a9b-83b2647c046b
+langcode: da
+status: true
+dependencies:
+  module:
+    - options
+    - social_event
+id: event_enrollment.field_request_or_invite_status
+field_name: field_request_or_invite_status
+entity_type: event_enrollment
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Pending
+    -
+      value: 1
+      label: Approved
+    -
+      value: 2
+      label: Declined
+    -
+      value: 3
+      label: Invited
+    -
+      value: 4
+      label: 'Pending reply'
+    -
+      value: 5
+      label: 'Accepted and joined'
+    -
+      value: 6
+      label: 'Invalid or expired'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -90,9 +90,9 @@ hidden:
   field_files: true
   field_topic_comments: true
   field_topic_type: true
+  flag_follow_content: true
   langcode: true
   links: true
   private_message_link: true
   search_api_excerpt: true
   shariff_field: true
-  flag_follow_content: true
