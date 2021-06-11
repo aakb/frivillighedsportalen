@@ -72,7 +72,12 @@
         "enable-patching": true,
         "patchLevel": {
             "drupal/core": "-p2"
-        }
+        },
+         "patches": {
+             "goalgorilla/open_social": {
+                 "Disable two post update functions": "disable-post-update.patch"
+             }
+         }
 
     }
 }
