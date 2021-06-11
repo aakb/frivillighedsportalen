@@ -16,7 +16,13 @@
         "drupal/migrate_source_csv": "^3.2",
         "drupal/twig_domquery": "^1.0@beta",
         "itk-dev/web_accessibility_statement": "dev-master",
-        "drupal/field_group": "^3.0"
+        "drupal/field_group": "^3.0",
+        "drupal/social_api": "1.1",
+        "drupal/social_auth": "1.0",
+        "drupal/social_auth_extra": "1.x-dev",
+        "drupal/social_auth_facebook": "1",
+        "drupal/social_auth_google": "1",
+        "drupal/social_search_autocomplete": "^1.2"
     },
     "repositories": [
         {
