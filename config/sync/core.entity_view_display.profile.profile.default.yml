@@ -18,6 +18,7 @@ dependencies:
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_nationality
     - field.field.profile.profile.field_profile_nick_name
     - field.field.profile.profile.field_profile_organization
     - field.field.profile.profile.field_profile_phone_number
@@ -144,6 +145,7 @@ hidden:
   field_profile_function: true
   field_profile_image: true
   field_profile_last_name: true
+  field_profile_nationality: true
   field_profile_nick_name: true
   field_profile_organization: true
   field_profile_show_email: true

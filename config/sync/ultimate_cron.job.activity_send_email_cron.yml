@@ -1,0 +1,20 @@
+uuid: 52e8038b-a2ce-41b4-86f7-c8d82033113c
+langcode: da
+status: true
+dependencies:
+  module:
+    - activity_send_email
+title: 'Default cron handler'
+id: activity_send_email_cron
+weight: 0
+module: activity_send_email
+callback: activity_send_email_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+logger:
+  id: database

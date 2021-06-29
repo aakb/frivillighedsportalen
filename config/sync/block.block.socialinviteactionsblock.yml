@@ -1,0 +1,28 @@
+uuid: ea9734fd-ffa6-498f-b132-ee014bf71c8d
+langcode: da
+status: true
+dependencies:
+  module:
+    - social_group_invite
+    - system
+  theme:
+    - socialblue
+_core:
+  default_config_hash: gfd9e_J6-ndbvgcg7dMovWH48LaEcnJqO8m7W-AiU_w
+id: socialinviteactionsblock
+theme: socialblue
+region: hidden
+weight: 0
+provider: null
+plugin: social_invite_actions_block
+settings:
+  id: social_invite_actions_block
+  label: 'Social Invite Actions block'
+  provider: social_group_invite
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/membership'
+    negate: false
+    context_mapping: {  }

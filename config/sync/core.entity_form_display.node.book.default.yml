@@ -1,4 +1,3 @@
-uuid: null
 langcode: da
 status: true
 dependencies:
@@ -24,17 +23,16 @@ third_party_settings:
         - field_content_visibility
       parent_name: ''
       weight: 2
-      label: Visibility
+      label: 'Access permissions'
       format_type: fieldset
       format_settings:
-        label: Visibility
+        description: ''
         required_fields: true
         id: visibility
         classes: card
       region: content
     group_description:
-      children:
-        - body
+      children: {  }
       parent_name: ''
       weight: 1
       label: Description
@@ -44,34 +42,54 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
-      region: content
+      region: hidden
     group_title:
       children:
         - title
         - field_book_image
+        - body
       parent_name: ''
       weight: 0
-      label: Content
+      label: 'Basic information'
       format_type: fieldset
       format_settings:
         description: ''
-        classes: ''
-        id: ''
         required_fields: true
+        id: ''
+        classes: ''
       region: content
     group_attachments:
       children:
         - field_files
       parent_name: ''
-      weight: 3
-      label: Attachments
-      format_type: fieldset
+      weight: 5
+      label: 'Additional information'
+      format_type: details
       format_settings:
         description: ''
-        classes: ''
-        id: ''
         required_fields: true
+        id: ''
+        classes: social-collapsible-fieldset
+        open: false
       region: content
+    group_settings:
+      children:
+        - field_book_comments
+        - uid
+        - created
+        - path
+        - status
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: social-collapsible-fieldset
+        open: false
+      label: Settings
 id: node.book.default
 targetEntityType: node
 bundle: book
@@ -80,21 +98,21 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 6
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
   field_book_comments:
-    weight: 9
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: comment_default
@@ -110,6 +128,8 @@ content:
         - hero
         - teaser
       progress_indicator: throbber
+      crop_types_required: {  }
+      warn_multiple_usages: true
     third_party_settings: {  }
     type: image_widget_crop
     region: content
@@ -126,24 +146,10 @@ content:
     third_party_settings: {  }
     type: file_generic
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 8
     settings: {  }
-    third_party_settings: {  }
-    region: content
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
     third_party_settings: {  }
     region: content
   status:
@@ -153,13 +159,6 @@ content:
     weight: 120
     region: content
     third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 7
-    third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 1
@@ -170,7 +169,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -180,3 +179,6 @@ content:
     region: content
 hidden:
   groups: true
+  promote: true
+  sticky: true
+  url_redirects: true

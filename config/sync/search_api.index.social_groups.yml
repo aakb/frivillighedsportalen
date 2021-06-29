@@ -8,6 +8,7 @@ dependencies:
     - search_api
   config:
     - field.storage.group.field_group_description
+    - field.storage.group.field_group_allowed_join_method
     - search_api.server.social_database
     - core.entity_view_mode.group.teaser
 _core:
@@ -25,6 +26,14 @@ field_settings:
     dependencies:
       module:
         - group
+  field_group_allowed_join_method:
+    label: 'Allowed join method'
+    datasource_id: 'entity:group'
+    property_path: field_group_allowed_join_method
+    type: string
+    dependencies:
+      config:
+        - field.storage.group.field_group_allowed_join_method
   field_group_description:
     label: Description
     datasource_id: 'entity:group'
@@ -63,6 +72,7 @@ field_settings:
         'entity:group':
           closed_group: teaser
           open_group: teaser
+          secret_group: teaser
   type:
     label: Type
     datasource_id: 'entity:group'
@@ -141,6 +151,7 @@ processor_settings:
     plugin_id: ignorecase
     all_fields: true
     fields:
+      - field_group_allowed_join_method
       - field_group_description
       - label
       - name
@@ -217,6 +228,7 @@ processor_settings:
     plugin_id: transliteration
     all_fields: true
     fields:
+      - field_group_allowed_join_method
       - field_group_description
       - label
       - name

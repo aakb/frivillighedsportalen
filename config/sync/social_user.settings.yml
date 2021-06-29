@@ -1,5 +1,5 @@
 langcode: da
-signup_help: 'A welcome message with further instructions will be sent to your email address after you successfully enter your email address and a username.'
+signup_help: 'En velkomstbesked med flere instruktioner bliver sendt til din email addresse når du succesfuldt har oprettet en bruger.'
 login_help: ''
 _core:
   default_config_hash: olu0qGxeLmRSDeYDtBxZveqpc2LNmlKiirZf9300v0A

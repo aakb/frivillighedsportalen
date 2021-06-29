@@ -18,6 +18,7 @@ dependencies:
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_nationality
     - field.field.profile.profile.field_profile_nick_name
     - field.field.profile.profile.field_profile_organization
     - field.field.profile.profile.field_profile_phone_number
@@ -42,6 +43,7 @@ third_party_settings:
         - field_profile_last_name
         - field_profile_image
         - field_profile_banner_image
+        - field_profile_nick_name
       parent_name: ''
       weight: 0
       label: 'Names and profile image'
@@ -169,7 +171,7 @@ content:
     type: address_default
     region: content
   field_profile_banner_image:
-    weight: 4
+    weight: 10
     settings:
       show_crop_area: true
       show_default_crop: true
@@ -184,7 +186,7 @@ content:
     type: image_widget_crop
     region: content
   field_profile_expertise:
-    weight: 35
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -194,7 +196,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_profile_first_name:
-    weight: 1
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -202,7 +204,7 @@ content:
     type: string_textfield
     region: content
   field_profile_function:
-    weight: 2
+    weight: 16
     settings:
       size: 60
       placeholder: ''
@@ -210,7 +212,7 @@ content:
     type: string_textfield
     region: content
   field_profile_image:
-    weight: 3
+    weight: 11
     settings:
       show_default_crop: true
       preview_image_style: social_x_large
@@ -228,7 +230,7 @@ content:
     type: image_widget_crop
     region: content
   field_profile_interests:
-    weight: 36
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -238,7 +240,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_profile_last_name:
-    weight: 2
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -254,7 +256,7 @@ content:
     type: string_textfield
     region: content
   field_profile_organization:
-    weight: 3
+    weight: 17
     settings:
       size: 60
       placeholder: ''
@@ -269,13 +271,13 @@ content:
     type: telephone_default
     region: content
   field_profile_profile_tag:
-    weight: 37
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_profile_self_introduction:
-    weight: 34
+    weight: 12
     settings:
       rows: 5
       placeholder: ''
@@ -283,6 +285,7 @@ content:
     type: text_textarea
     region: content
 hidden:
+  field_profile_nationality: true
   field_profile_show_email: true
   field_type: true
   is_default: true

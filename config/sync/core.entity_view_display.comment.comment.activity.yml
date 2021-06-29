@@ -6,6 +6,7 @@ dependencies:
     - comment.type.comment
     - core.entity_view_mode.comment.activity
     - field.field.comment.comment.field_comment_body
+    - field.field.comment.comment.field_comment_files
   module:
     - text
 _core:
@@ -33,6 +34,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_comment_files: true
   langcode: true
   private_message_link: true
   search_api_excerpt: true
