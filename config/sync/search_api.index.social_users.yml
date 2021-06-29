@@ -13,6 +13,7 @@ dependencies:
     - field.storage.profile.field_profile_interests
     - field.storage.profile.field_profile_last_name
     - field.storage.profile.field_profile_profile_tag
+    - field.storage.profile.field_profile_nick_name
     - search_api.server.social_database
     - core.entity_view_mode.profile.search_index
 _core:
@@ -23,13 +24,15 @@ description: 'Default users index created for the Social distribution.'
 read_only: false
 field_settings:
   created:
-    label: Created
+    label: 'Owner » User » Created'
     datasource_id: 'entity:profile'
-    property_path: created
+    property_path: 'uid:entity:created'
     type: date
     dependencies:
       module:
         - profile
+        - user
+        - user
   field_profile_expertise:
     label: Expertise
     datasource_id: 'entity:profile'
@@ -64,6 +67,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.profile.field_profile_last_name
+  field_profile_nick_name:
+    label: Nickname
+    datasource_id: 'entity:profile'
+    property_path: field_profile_nick_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_nick_name
   field_profile_profile_tag:
     label: 'Profile tag'
     datasource_id: 'entity:profile'
@@ -155,6 +166,7 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
+      - field_profile_nick_name
       - name
       - rendered_item
     weights:
@@ -220,6 +232,7 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
+      - field_profile_nick_name
       - name
       - rendered_item
     spaces: ''
@@ -234,6 +247,7 @@ processor_settings:
     fields:
       - field_profile_first_name
       - field_profile_last_name
+      - field_profile_nick_name
       - name
       - rendered_item
     weights:

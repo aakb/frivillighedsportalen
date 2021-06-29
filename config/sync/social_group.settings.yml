@@ -1,2 +1,4 @@
 allow_group_selection_in_node: false
 langcode: da
+allow_group_create: true
+social_group_type_required: false

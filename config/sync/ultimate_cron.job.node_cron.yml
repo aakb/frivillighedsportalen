@@ -1,0 +1,17 @@
+uuid: 9d85ccae-3de3-4904-8b77-6090e62324ee
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+title: 'Updates search rankings for nodes'
+id: node_cron
+weight: 0
+module: node
+callback: node_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

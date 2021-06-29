@@ -267,7 +267,7 @@ display:
       display_extenders: {  }
       display_description: ''
       block_description: 'Latest topic block'
-      title: 'Newest topics'
+      title: 'Nyeste emner'
       defaults:
         title: false
         use_more: false
@@ -369,7 +369,7 @@ display:
         type: perm
         options:
           perm: 'access content'
-      title: 'Newest topics'
+      title: 'Nyeste emner'
       use_more: true
       use_more_always: true
       use_more_text: 'All topics'

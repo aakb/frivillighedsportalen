@@ -19,6 +19,7 @@ dependencies:
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_nationality
     - field.field.profile.profile.field_profile_nick_name
     - field.field.profile.profile.field_profile_organization
     - field.field.profile.profile.field_profile_phone_number
@@ -241,5 +242,6 @@ hidden:
   field_koerekort: true
   field_location: true
   field_lokalcenter: true
+  field_profile_nationality: true
   field_type: true
   is_default: true

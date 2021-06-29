@@ -1,4 +1,3 @@
-uuid: 4f745f64-8289-4efe-b657-6c5b7b8aed0d
 langcode: da
 status: true
 dependencies:
@@ -7,17 +6,14 @@ dependencies:
     - field.storage.group_content.group_roles
     - field.storage.profile.field_profile_organization
     - group.content_type.closed_group-group_membership
-    - group.content_type.flexible_group-group_membership
     - group.content_type.open_group-group_membership
     - group.content_type.public_group-group_membership
-    - group.content_type.secret_group-group_membership
   module:
     - group
     - profile
     - social_group
+    - social_profile
     - user
-_core:
-  default_config_hash: GDpJ5bx9nGGYG25jH2WHORrRapda7bbMxIpFZOPZ1jk
 id: group_manage_members
 label: 'Group Manage Members'
 module: views
@@ -79,6 +75,61 @@ display:
           quantity: 9
       style:
         type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            social_views_bulk_operations_bulk_form_group: social_views_bulk_operations_bulk_form_group
+            profile_entity_sortable: profile_entity_sortable
+            field_profile_organization: field_profile_organization
+            group_roles: group_roles
+            created: created
+            operations: operations
+          info:
+            social_views_bulk_operations_bulk_form_group:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            profile_entity_sortable:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_profile_organization:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            group_roles:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
       fields:
@@ -149,10 +200,10 @@ display:
             social_group_delete_group_content_action:
               label_override: Remove
           plugin_id: social_views_bulk_operations_bulk_form_group
-        rendered_entity:
-          id: rendered_entity
+        profile_entity_sortable:
+          id: profile_entity_sortable
           table: profile
-          field: rendered_entity
+          field: profile_entity_sortable
           relationship: profile
           group_type: group
           admin_label: ''
@@ -199,7 +250,7 @@ display:
           hide_alter_empty: true
           view_mode: table
           entity_type: profile
-          plugin_id: rendered_entity
+          plugin_id: profile_entity_sortable
         field_profile_organization:
           id: field_profile_organization
           table: profile__field_profile_organization
@@ -457,8 +508,6 @@ display:
             closed_group-group_membership: closed_group-group_membership
             open_group-group_membership: open_group-group_membership
             public_group-group_membership: public_group-group_membership
-            flexible_group-group_membership: flexible_group-group_membership
-            secret_group-group_membership: secret_group-group_membership
           group: 1
           exposed: false
           expose:
@@ -610,9 +659,11 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:field.storage.group_content.group_roles'
@@ -640,9 +691,11 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'
         - 'config:field.storage.group_content.group_roles'
